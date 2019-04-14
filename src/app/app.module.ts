@@ -1,3 +1,4 @@
+import { UserProfile } from './userprofile/userprofile.component';
 import { AuthenticationService } from './login/authentication.service';
 import { AboutUsComponent } from './aboutus/aboutus.component';
 
@@ -67,7 +68,7 @@ const appRoutes: Routes = [
   { path: 'our-story', component: MainPageComponent },
       { path: 'when-where', component: WhenWhereComponent },
   { path: '',
-  component: TripWithUsComponent,
+  component: UserProfile,
     pathMatch: 'full'
   }
 ];
@@ -86,7 +87,8 @@ const appRoutes: Routes = [
     WhenWhereComponent,
     AdminComponent,
     TripWithUsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    UserProfile
   ],
   imports: [
     BrowserModule,
