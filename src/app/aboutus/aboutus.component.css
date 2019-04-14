@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+html, body {
+    background-image: url('https://getwallpapers.com/wallpaper/full/3/7/e/1449721-windows-81-lock-screen-wallpaper-1920x1200-4k.jpg');
+    background-size: cover;
+
+}
+
+.container {
+    padding-top: 3%;
+}
+
+h1.header1 {
+    font-style: 'Lato', 'sans serif';
+    font-weight: 500;
+    color: #555;
+}
+
+.aboutus-para {
+    margin-top: 1.5%;
+    font-size: 1em;
+    font-style: 'Lato', 'sans-serif';
+    font-weight: 400;
+    color: #555;
+    word-spacing: 2%;
+    justify-content:center;
+    letter-spacing: 1%;
+    line-height: 170%;
+}
