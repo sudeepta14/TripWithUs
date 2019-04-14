@@ -10,7 +10,7 @@ import { of } from 'rxjs/observable/of';
   templateUrl: './userprofile.component.html',
   styleUrls: ['./userprofile.component.css']
 })
-export class BookComponent implements OnInit {
+export class UserProfile implements OnInit {
 
   books: any;
 
