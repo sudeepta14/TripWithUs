@@ -1,3 +1,4 @@
+import { SampleComponent } from './sample/sample.component';
 import { UserProfile } from './userprofile/userprofile.component';
 import { AuthenticationService } from './login/authentication.service';
 import { AboutUsComponent } from './aboutus/aboutus.component';
@@ -68,7 +69,7 @@ const appRoutes: Routes = [
   { path: 'our-story', component: MainPageComponent },
       { path: 'when-where', component: WhenWhereComponent },
   { path: '',
-  component: UserProfile,
+  component: SampleComponent,
     pathMatch: 'full'
   }
 ];
@@ -88,7 +89,8 @@ const appRoutes: Routes = [
     AdminComponent,
     TripWithUsComponent,
     AboutUsComponent,
-    UserProfile
+    UserProfile,
+    SampleComponent
   ],
   imports: [
     BrowserModule,
