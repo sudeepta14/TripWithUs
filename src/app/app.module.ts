@@ -1,3 +1,4 @@
+import { WebFormComponent } from './webform/webform.component';
 import { SampleComponent } from './sample/sample.component';
 import { UserProfile } from './userprofile/userprofile.component';
 import { AuthenticationService } from './login/authentication.service';
@@ -69,7 +70,7 @@ const appRoutes: Routes = [
   { path: 'our-story', component: MainPageComponent },
       { path: 'when-where', component: WhenWhereComponent },
   { path: '',
-  component: SampleComponent,
+  component: WebFormComponent,
     pathMatch: 'full'
   }
 ];
@@ -90,7 +91,8 @@ const appRoutes: Routes = [
     TripWithUsComponent,
     AboutUsComponent,
     UserProfile,
-    SampleComponent
+    SampleComponent,
+    WebFormComponent
   ],
   imports: [
     BrowserModule,
