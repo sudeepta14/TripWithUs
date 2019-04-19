@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 html, body {
-    background-image: url('https://getwallpapers.com/wallpaper/full/3/7/e/1449721-windows-81-lock-screen-wallpaper-1920x1200-4k.jpg');
+    background-image: url('/assets/images/Dest_goldengate.png');
     font-family: "Lato", sans-serif;
     background-size: cover;
 }
