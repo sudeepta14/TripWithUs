@@ -4,6 +4,7 @@ html, body {
     background-image: url('/assets/images/destination.jpg');
     font-family: "Lato", sans-serif;
     background-size: cover;
+    background-repeat:repeat;
 }
 /************* navigation ********************/
 
