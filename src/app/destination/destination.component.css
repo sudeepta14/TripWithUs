@@ -49,7 +49,7 @@ nav .navbar-nav li a{
 
 /*******************************************/
 
-/* .search-part {
+.search-part {
     width: 50%;
     margin: 100px auto;
 
@@ -69,7 +69,7 @@ nav .navbar-nav li a{
     text-align: center;
     pointer-events: none;
     color: #aaa;
-} */
+}
 
 input[type=text] {
   width: 130px;
