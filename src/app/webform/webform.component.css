@@ -18,11 +18,22 @@ Distance between action items
   font-family: 'Lato', 'sans-serif';
   cursor: pointer;
   margin-left: 20px;
-  color: #555454;
+  color: #fff;
 }
 
 nav .navbar-nav li a{
-color: #555454 !important;
+color: #fff !important;
+}
+
+.navbar .navbar-text {
+  color: white!important;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.sheero {
+  height: 60px;
+  width: auto;
 }
 
 /************ Basic Setup *******/
@@ -36,7 +47,7 @@ color: #555454 !important;
 html,
 body {
 
-  background-image: url('http://getwallpapers.com/wallpaper/full/3/7/e/1449721-windows-81-lock-screen-wallpaper-1920x1200-4k.jpg');
+  background-image: url("webform_wallpaper.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -86,11 +97,11 @@ h2 {
 
 /************* Add events Form ********************/
 .add-form-container {
-  width: 70%;                             /* Here context is section of width 90px, so target/context = 63px/90px = 70% */
+  width: 50%;                             /* Here context is section of width 90px, so target/context = 63px/90px = 70% */
   height: 100%;                          /****** 100% of viewport height ********/
   margin: 0 auto;
   background-color: #fff;
-  border-radius: 25%;
+  /*border-radius: 25%; */
 }
 
 label {
@@ -111,7 +122,7 @@ select,
 textarea {
   width: 100%;
   padding: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   border-radius: 3%;
   border: 1px solid #ccc;
 }
@@ -148,7 +159,7 @@ input[type=date],
 input[type=number]{
   width: 100%;
   padding: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   border-radius: 3%;
   border: 1px solid #ccc;
 }
@@ -201,7 +212,7 @@ textarea {
 
   label {
       display: block;
-      color: #555454;
+      color: #fff;
       font-weight: 400;
   }
 
@@ -232,12 +243,10 @@ textarea {
 }
 
 
-
   .submit-button {
       text-align: center;
       padding-bottom: 20%;
   }
-
 
 }
 

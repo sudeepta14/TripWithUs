@@ -47,7 +47,7 @@ color: #fff !important;
 html,
 body {
 
-  background-image: url("webform_wallpaper.png");
+  background-image: url("/assets/images/webform_wallpaper.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
