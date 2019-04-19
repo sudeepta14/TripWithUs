@@ -49,7 +49,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'aboutus',
-    component: AboutUsComponent,
+    component: WebFormComponent,
     data: { title: 'Sign Up' }
   },
   {
@@ -70,7 +70,7 @@ const appRoutes: Routes = [
   { path: 'our-story', component: MainPageComponent },
       { path: 'when-where', component: WhenWhereComponent },
   { path: '',
-  component: WebFormComponent,
+  component: SampleComponent,
     pathMatch: 'full'
   }
 ];
