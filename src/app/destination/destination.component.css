@@ -85,7 +85,7 @@ nav .navbar-nav li a{
 	/* background: -webkit-linear-gradient(top, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	/* background: linear-gradient(to bottom, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54d0dd', endColorstr='#414a52', GradientType=0 ); IE6-9 */
-background: transparent;
+background: white;
 }
 #portfolio h1 {
   background:white;
