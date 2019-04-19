@@ -88,7 +88,8 @@ nav .navbar-nav li a{
 background: transparent;
 }
 #portfolio h1 {
-	color: black;
+  background: #414a52;
+	color: #54d0dd;
 }
 .categories {
 	padding-bottom: 35px;
