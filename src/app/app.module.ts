@@ -1,3 +1,4 @@
+import { DestinationComponent } from './destination/destination.component';
 import { WebFormComponent } from './webform/webform.component';
 import { SampleComponent } from './sample/sample.component';
 import { UserProfile } from './userprofile/userprofile.component';
@@ -44,7 +45,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'signup',
-    component: SignupComponent,
+    component: DestinationComponent,
     data: { title: 'Sign Up' }
   },
   {
@@ -92,7 +93,8 @@ const appRoutes: Routes = [
     AboutUsComponent,
     UserProfile,
     SampleComponent,
-    WebFormComponent
+    WebFormComponent,
+    DestinationComponent
   ],
   imports: [
     BrowserModule,

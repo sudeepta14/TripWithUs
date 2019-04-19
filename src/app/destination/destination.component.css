@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+html, body {
+    background-image: url('https://getwallpapers.com/wallpaper/full/3/7/e/1449721-windows-81-lock-screen-wallpaper-1920x1200-4k.jpg');
+    font-family: "Lato", sans-serif;
+    background-size: cover;
+}
+/************* navigation ********************/
+
+
+
+.nav-link {
+    font-size: 1.4em;
+    font-family: 'Lato', 'sans-serif';
+    cursor: pointer;
+    margin-left: 35px;
+    /*color: #555454; */
+}
+
+nav .navbar-nav li a{
+  color: #000 !important;
+  }
+
+.navbar .navbar-text {
+    color: black!important;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.sheero {
+    height: 60px;
+    width: auto;
+}
+
+/*******************************************/
+
+.search-part {
+    width: 50%;
+    margin: 100px auto;
+
+}
+
+.has-search .form-control {
+    padding-left: 2.375em;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/**************************************************/
+
+.card-body {
+    padding: 0.5rem;
+}
+
+h3.card-title {
+    font-size: 1.5rem;
+}
+
+h5.card-title {
+    font-size: 1.5rem;
+}
+
+p.card-text {
+    padding-bottom: 0.8rem;
+    line-height: 1.2rem;
+}
