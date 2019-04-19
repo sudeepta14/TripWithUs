@@ -36,7 +36,6 @@
             }
         });
         $('.cat a').click(function() {
-          alert("hello");
             $('.cat .active').removeClass('active');
             $(this).addClass('active');
             var selector = $(this).attr('data-filter');
@@ -92,16 +91,16 @@
         </div>
     </nav>
 
-    <!-- <div class="search-part">
-        <div class="input-group">
-            <input type="text" class="form-control" onkeyup="myFunction()" placeholder="Search...">
-            <div class="input-group-append">
-                <button class="btn btn-secondary" typeutton">
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
-        </div>
-    </div> -->
+    // <!-- <div class="search-part">
+    //     <div class="input-group">
+    //         <input type="text" class="form-control" onkeyup="myFunction()" placeholder="Search...">
+    //         <div class="input-group-append">
+    //             <button class="btn btn-secondary typebutton">
+    //                 <i class="fa fa-search"></i>
+    //             </button>
+    //         </div>
+    //     </div>
+    // </div> -->
 
     <div id="portfolio">
         <div class="container">
@@ -113,10 +112,10 @@
             <ul class="cat">
               <li>
                 <ol class="type">
-                  <li><a  data-filter="*" class="active">All</a></li>
-                  <li><a  data-filter=".web">Web Design</a></li>
-                  <li><a  data-filter=".photography">Photography</a></li>
-                  <li><a  data-filter=".product">Product Design</a></li>
+                  <li><a routerLink="signup"  data-filter="*" class="active">All</a></li>
+                  <li><a  routerLink="signup" data-filter=".web">Web Design</a></li>
+                  <li><a  routerLink="signup" data-filter=".photography">Photography</a></li>
+                  <li><a  routerLink="signup" data-filter=".product">Product Design</a></li>
                 </ol>
               </li>
             </ul>
