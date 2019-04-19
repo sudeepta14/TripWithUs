@@ -99,7 +99,7 @@ ol.type li {
 	margin-left: 20px;
 }
 ol.type li a {
-	background: #414a52;
+	background: transparent;
 	color: #54d0dd;
 	padding: 12px 24px;
 	text-transform: uppercase;
@@ -110,7 +110,7 @@ ol.type li a.active {
 }
 ol.type li a:hover {
 	background: #54d0dd;
-	color: #414a52;
+	color: transparent;
 }
 .isotope-item {
 	z-index: 2
