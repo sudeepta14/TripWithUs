@@ -87,8 +87,8 @@ nav .navbar-nav li a{
 /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54d0dd', endColorstr='#414a52', GradientType=0 ); IE6-9 */
 background: transparent;
 }
-#portfolio h2 {
-	color: #54d0dd;
+#portfolio h1 {
+	color: black;
 }
 .categories {
 	padding-bottom: 35px;
