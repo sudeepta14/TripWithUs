@@ -1,5 +1,5 @@
 function gridChange() {
-
+alert("hello");
     $('.cat .active').removeClass('active');
     $(this).addClass('active');
     var selector = $(this).attr('data-filter');
