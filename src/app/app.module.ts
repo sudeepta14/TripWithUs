@@ -1,3 +1,4 @@
+import { DestinationListComponent } from './destination-list/destination-list.component';
 import { DestinationComponent } from './destination/destination.component';
 import { WebFormComponent } from './webform/webform.component';
 import { SampleComponent } from './sample/sample.component';
@@ -35,7 +36,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent,
+    component: DestinationListComponent,
     data: { title: 'Login' }
   },
   {
@@ -94,7 +95,8 @@ const appRoutes: Routes = [
     UserProfile,
     SampleComponent,
     WebFormComponent,
-    DestinationComponent
+    DestinationComponent,
+    DestinationListComponent
   ],
   imports: [
     BrowserModule,
