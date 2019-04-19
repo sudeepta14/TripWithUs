@@ -26,6 +26,7 @@
     <script type="text/javascript" src="/assets/js/modernizr.custom.js"></script>
     <script>
           $(window).load(function() {
+            alert("sudeepta");
         var $container = $('.portfolio-items');
         $container.isotope({
             filter: '*',
@@ -36,6 +37,7 @@
             }
         });
         $('.cat a').click(function() {
+          alert("das");
             $('.cat .active').removeClass('active');
             $(this).addClass('active');
             var selector = $(this).attr('data-filter');
