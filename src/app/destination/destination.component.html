@@ -4,40 +4,11 @@
       <script type="text/javascript" src="javascript.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
       <script type="text/javascript" src="/assets/js/myFile.js"></script>
-<script>
 
- var app = angular.module('DemoApp', [])
- app.controller('akuaController', function($scope) {
-   $scope.load = function() {
-     alert("Window is loaded");
-   }
- });
-</script>
   </head>
-  <body onload="myFunction();">
-      <div ng-app="myApp" ng-controller="mainController">
-          <h2>Angularjs call function on page load</h2>
-        </div>
 
 
-        <script type="text/javascript">
-          var myApp = angular.module("myApp", []);
-
-
-          myApp.controller("mainController", function($scope, $window) {
-
-
-            $window.onload = function() {
-               alert("Angularjs call function on page load");
-            };
-
-
-          });
-
-
-        </script>
-
-<div class="main" ng-init="load()">
+<div class="main">
 
     <h1>MYLOGO.COM</h1>
     <hr>
