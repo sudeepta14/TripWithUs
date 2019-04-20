@@ -1,7 +1,7 @@
-
 $(document).ready(function(){
-  $(".btn active").trigger("click");
+  document.getElementById("first").click();
 });
+
 
 
 function filterSelection(c) {
@@ -46,6 +46,3 @@ function w3RemoveClass(element, name) {
 //   });
 // }
 
-window.onload=function(){
-  document.getElementById("first").click();
-};
