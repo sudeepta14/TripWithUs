@@ -1,5 +1,5 @@
-$(window).load(function() { filterSelection("all"); })
 
+window.onload=filterSelection("all"); ;
 
 function filterSelection(c) {
   var x, i;
