@@ -2,8 +2,9 @@
 
 
 $(function(){
-
-  $(btn).click();
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  $(btns[0]).click();
 
 });
 
