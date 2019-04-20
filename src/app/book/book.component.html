@@ -18,7 +18,7 @@
       <tr *ngFor="let book of books">
         <td>{{ book.isbn }}</td>
         <td>{{ book.title }}</td>
-        <td>{{ book.publisher }}</td>
+        <td>{{ book.author }}</td>
         <td>{{ book.publisher }}</td>
         <td><a [routerLink]="['/book-details', book._id]">Show Detail</a></td>
       </tr>
