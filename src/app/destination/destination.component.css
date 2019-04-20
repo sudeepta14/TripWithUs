@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 html, body {
-    background-image: url('/assets/images/gradient.jpg');
+    background-image: url('/assets/images/002.jpg');
     font-family: "Lato", sans-serif;
     background-repeat:repeat;
+    height:1000px;
 }
 /************* navigation ********************/
 
