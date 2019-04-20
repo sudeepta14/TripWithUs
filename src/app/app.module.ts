@@ -5,8 +5,6 @@ import { SampleComponent } from './sample/sample.component';
 import { UserProfile } from './userprofile/userprofile.component';
 import { AuthenticationService } from './login/authentication.service';
 import { AboutUsComponent } from './aboutus/aboutus.component';
-
-
 import { AdminComponent } from './admin/admin.component';
 import { WhenWhereComponent } from './secondpage/secondpage.component';
 import { MainPageComponent } from './mainpage/mainpage.component';
@@ -105,11 +103,11 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: true }
     )
   ],
   providers: [],
-
+  exports:[RouterModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

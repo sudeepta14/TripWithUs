@@ -25,7 +25,7 @@
     "@angular/material": "^7.3.6",
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
-    "@angular/router": "^5.0.0",
+    "@angular/router": "^5.2.11",
     "angular2-materialize": "^15.1.10",
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "^3.5.1",
