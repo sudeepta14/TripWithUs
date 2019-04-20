@@ -1,6 +1,4 @@
-$(function() {
-  filterSelection("all");
-});
+$(window).load(function() { filterSelection("all"); })
 
 
 function filterSelection(c) {
