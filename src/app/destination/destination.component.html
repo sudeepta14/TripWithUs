@@ -3,11 +3,19 @@
       <script type="text/javascript" src="/assets/js/myFile.js"></script>
       <script type="text/javascript" src="javascript.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+      <script>
+          var app = angular.module('pageLoadApp', []);
 
+          app.controller('pageLoadAppCtrl', ["$scope", function($scope) {
+            $scope.onloadFun = function() {
+              alert(1);
+            }
+          }]);
+        </script>
   </head>
-<body onload="myFunction()">
+<body ng-app="pageLoadApp" ng-controller="pageLoadAppCtrl">
 
-<div class="main">
+<div class="main" data-ng-init="onloadFun()">
 
     <h1>MYLOGO.COM</h1>
     <hr>
