@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 html, body {
-    background-image: url('/assets/images/destination.jpg');
-    font-family: "Lato", sans-serif;
-    background-repeat:repeat;
+
 }
 /************* navigation ********************/
+.startHere{
+  background-image: url('/assets/images/002.jpg');
+  font-family: "Lato", sans-serif;
+  background-repeat:repeat;
 
+}
 .ptext {
   position: absolute;
   top: 50%;
