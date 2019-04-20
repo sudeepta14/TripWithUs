@@ -4,7 +4,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 
   </head>
-<body ng-app="app" ng-controller = "exampleController as ctrl" onload="ctrl.name()">
+<body >
 
 <div class="main">
 
@@ -98,12 +98,3 @@
     </body>
     </html>
 
-    <script>
-        var app = angular.module("app", []);
-
-        app.controller('exampleController', [function() {
-            this.name = function(){
-                alert("text");
-            }
-        }]);
-     </script>
