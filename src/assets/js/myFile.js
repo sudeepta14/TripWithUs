@@ -46,4 +46,6 @@ function w3RemoveClass(element, name) {
 //   });
 // }
 
-window.onload = filterSelection("all");
+window.onload=function(){
+  document.getElementById("first").click();
+};
