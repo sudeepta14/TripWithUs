@@ -45,7 +45,7 @@ const appRoutes: Routes = [
     data: { title: 'Admin' }
   },
   {
-    path: 'signup',
+    path: '/signup',
     component: DestinationComponent,
     data: { title: 'Sign Up' }
   },
@@ -75,6 +75,7 @@ const appRoutes: Routes = [
   component: SampleComponent,
     pathMatch: 'full'
   }
+
 ];
 
 @NgModule({
