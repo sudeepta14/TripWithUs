@@ -10,6 +10,7 @@ export class DestinationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
