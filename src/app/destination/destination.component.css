@@ -9,6 +9,70 @@ html, body {
     font-family: "Lato", sans-serif;
     background-repeat:repeat;
 }
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+  }
+
+  .ptext .border{
+    background : #111;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .nav-link {
+      font-size: 1.4em;
+      font-family: 'Lato', 'sans-serif';
+      cursor: pointer;
+      margin-left: 35px;
+      /*color: #555454; */
+  }
+
+  nav .navbar-nav li a{
+    color: #000 !important;
+    }
+
+  .navbar .navbar-text {
+      color: black!important;
+      font-weight: bold;
+      font-size: 3em;
+  }
+
+  .sheero {
+      height: 60px;
+      width: auto;
+  }
+
+  /*******************************************/
+
+  .search-part {
+      width: 60%;
+      margin: 100px auto;
+
+  }
+
+  .has-search .form-control {
+      padding-left: 2.375em;
+  }
+
+  .has-search .form-control-feedback {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      width: 2.375rem;
+      height: 2.375rem;
+      line-height: 2.375rem;
+      text-align: center;
+      pointer-events: none;
+      color: #aaa;
+  }
+
 
 /* Center website */
 .main {
