@@ -12,6 +12,7 @@ body {
 .main {
   max-width: 1000px;
   margin: auto;
+  height: 800px;
 }
 
 h1 {
