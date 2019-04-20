@@ -1,6 +1,7 @@
 
 function myFunction() {
   $('#first').click();
+  alert("hello");
 }
 function filterSelection(c) {
   var x, i;
