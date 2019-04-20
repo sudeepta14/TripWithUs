@@ -70,7 +70,7 @@ const appRoutes: Routes = [
   { path: 'our-story', component: MainPageComponent },
       { path: 'when-where', component: WhenWhereComponent },
   { path: '',
-  component: BookComponent,
+  component: SampleComponent,
     pathMatch: 'full'
   }
 
