@@ -1,21 +1,14 @@
 <html>
   <head>
-      <script type="text/javascript" src="/assets/js/myFile.js"></script>
+
       <script type="text/javascript" src="javascript.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-      <script>
-          var app = angular.module('pageLoadApp', []);
+      <script type="text/javascript" src="/assets/js/myFile.js"></script>
 
-          app.controller('pageLoadAppCtrl', ["$scope", function($scope) {
-            $scope.onloadFun = function() {
-              alert(1);
-            }
-          }]);
-        </script>
   </head>
-<body ng-app="pageLoadApp" ng-controller="pageLoadAppCtrl">
+<body ng-app="DemoApp" ng-controller="akuaController">
 
-<div class="main" data-ng-init="onloadFun()">
+<div class="main" ng-init="load()">
 
     <h1>MYLOGO.COM</h1>
     <hr>

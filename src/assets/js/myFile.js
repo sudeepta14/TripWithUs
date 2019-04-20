@@ -1,4 +1,11 @@
 
+ var app = angular.module('DemoApp', [])
+ app.controller('akuaController', function($scope) {
+   $scope.load = function() {
+     alert("Window is loaded");
+   }
+ });
+
 function myFunction() {
   $('#first').click();
   alert("hello");
