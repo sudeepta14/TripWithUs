@@ -1,9 +1,10 @@
 <html>
   <head>
       <script type="text/javascript" src="/assets/js/myFile.js"></script>
-      <script>window.onload=filterSelection("all"); </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
   </head>
-<body onload="filterSelection('all');">
+<body ng-app="app" ng-controller = "exampleController as ctrl" onload="dummy()">
 
 <div class="main">
 
@@ -96,3 +97,13 @@
 
     </body>
     </html>
+
+    <script>
+        var app = angular.module("app", []);
+
+        app.controller('exampleController', [function() {
+            this.name = function(){
+                alert("text");
+            }
+        }]);
+     </script>
