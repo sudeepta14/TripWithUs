@@ -1,12 +1,8 @@
 
-
-
-$(function(){
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btn");
-  $(btns[0]).click();
-
+$(document).ready(function(){
+  $(".btn active").trigger("click");
 });
+
 
 function filterSelection(c) {
   var x, i;
