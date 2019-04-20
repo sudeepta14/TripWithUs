@@ -1,9 +1,7 @@
 
-$( document ).ready(function() {
-  filterSelection("all");
-});
 
-$(filterSelection("all"));
+
+
 
 function filterSelection(c) {
   var x, i;
