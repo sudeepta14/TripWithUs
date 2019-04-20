@@ -1,4 +1,6 @@
-
+$window.onload = function() {
+  alert("Angularjs call function on page load");
+};
 
 function myFunction() {
   $('#first').click();
