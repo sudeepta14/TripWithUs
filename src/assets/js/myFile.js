@@ -1,7 +1,11 @@
 
 
 
+$(function(){
 
+  $(btn).click();
+
+});
 
 function filterSelection(c) {
   var x, i;
