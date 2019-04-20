@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Event List
+    <h1>Destination List
         <a [routerLink]="['/book-create']" class="btn btn-default btn-lg">
           <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
         </a>
@@ -8,16 +8,18 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Event Name</th>
-        <th>Event Location</th>
-        <th>Event Date</th>
-        <th>Event Type</th>
+        <th>Destination Name</th>
+        <th>Destination Location</th>
+        <th>Destination Budget</th>
+        <th>Destination Best Time To Visit</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let book of books">
         <td>{{ book.isbn }}</td>
         <td>{{ book.title }}</td>
+        <td>{{ book.publisher }}</td>
+        <td>{{ book.publisher }}</td>
         <td><a [routerLink]="['/book-details', book._id]">Show Detail</a></td>
       </tr>
     </tbody>
