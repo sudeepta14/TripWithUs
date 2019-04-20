@@ -15,14 +15,14 @@
             <label for="name">Destination Budget</label>
             <input type="text" class="form-control" [(ngModel)]="book.author" name="author" required>
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label for="name"> Destination Best Times To Visit</label>
             <input type="text" class="form-control" [(ngModel)]="book.published_year" name="published_year" required>
-          </div>
-          <!-- <div class="form-group">
+          </div> -->
+          <div class="form-group">
             <label for="name"></label>
             <input type="text" class="form-control" [(ngModel)]="book.publisher" name="publisher" required>
-          </div> -->
+          </div>
           <div class="form-group">
             <button type="submit" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
           </div>
