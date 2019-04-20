@@ -1,30 +1,4 @@
- <div class="container">
-    <h1>Destination List
-        <a [routerLink]="['/book-create']" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-        </a>
-      </h1>
-   <button class="btn btn-success" (click)="logout()">Logout</button>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Destination Name</th>
-        <th>Destination Location</th>
-        <th>Destination Budget</th>
-        <th>Destination Best Time To Visit</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let book of books">
-        <td>{{ book.isbn }}</td>
-        <td>{{ book.title }}</td>
-        <td>{{ book.author }}</td>
-        <td>{{ book.publisher }}</td>
-        <td><a [routerLink]="['/book-details', book._id]">Show Detail</a></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+
 <!-- <div class="container">
     <h1>Book List
       <a [routerLink]="['/book-create']" class="btn btn-default btn-lg">
@@ -117,7 +91,34 @@
         </ul>
         </div>
     </nav>
-
+    <div class="container">
+        <h1>Destination List
+            <a [routerLink]="['/book-create']" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </a>
+          </h1>
+       <button class="btn btn-success" (click)="logout()">Logout</button>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Destination Name</th>
+            <th>Destination Location</th>
+            <th>Destination Budget</th>
+            <th>Destination Best Time To Visit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of books">
+            <td>{{ book.isbn }}</td>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.publisher }}</td>
+            <td><a [routerLink]="['/book-details', book._id]">Show Detail</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
      <!-- <div class="search-part">
     //     <div class="input-group">
     //         <input type="text" class="form-control" onkeyup="myFunction()" placeholder="Search...">
