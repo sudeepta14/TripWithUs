@@ -14,7 +14,28 @@
  });
 </script>
   </head>
-<body ng-app="DemoApp" ng-controller="akuaController">
+  <body>
+      <div ng-app="myApp" ng-controller="mainController">
+          <h2>Angularjs call function on page load</h2>
+        </div>
+
+
+        <script type="text/javascript">
+          var myApp = angular.module("myApp", []);
+
+
+          myApp.controller("mainController", function($scope, $window) {
+
+
+            $window.onload = function() {
+               alert("Angularjs call function on page load");
+            };
+
+
+          });
+
+
+        </script>
 
 <div class="main" ng-init="load()">
 
@@ -105,7 +126,7 @@
 
 
 
-    </body>
+    </div>
     </html>
 
 
