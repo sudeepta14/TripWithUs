@@ -2,10 +2,7 @@
 //   alert("Angularjs call function on page load");
 // };
 
-function myFunction() {
-  $('#first').click();
-  alert("hello");
-}
+
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
