@@ -1,8 +1,6 @@
 
 
-window.addEventListener('load', function () {
-  filterSelection("all");
-  }, false);
+window.onload=filterSelection("all");
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
