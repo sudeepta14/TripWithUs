@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 html, body {
-    background-image: url('/assets/images/destination.jpg');
+    background-image: url('/assets/images/gradient.jpg');
     font-family: "Lato", sans-serif;
     background-repeat:repeat;
 }
