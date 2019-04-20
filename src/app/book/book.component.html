@@ -24,6 +24,22 @@
       </tr>
     </tbody>
   </table>
+  <div class="container mb-5">
+      &nbsp;
+      <div class="portfolio-items">
+        <div class="card-deck" *ngFor="let book of books">
+        <div class="card product" style="color: #555;">
+            <div class="card-body">
+            <img src="/assets/images/Dest_goldengate.png" alt="golden gate picture" class="img-fluid"/>
+            <h3 class="card-title mt-2">{{ book.isbn }}</h3>
+            <h5 class="card-subtitle">{{ book.title }}</h5>
+            <p class="card-text mt-3">{{ book.author }}</p>
+            <h5 class="card-subtitle">{{ book.publisher }}</h5>
+            <a href="#" class="btn btn-primary">Show Detail</a>
+            </div>
+        </div>
+        </div>
+        </div>
 </div>
 <!-- <div class="container">
     <h1>Book List
