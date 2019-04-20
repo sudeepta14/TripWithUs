@@ -1,5 +1,7 @@
 
-
+function myFunction() {
+  $('#first').click();
+}
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
