@@ -30,37 +30,37 @@ import { App, NavController } from 'ionic-angular';
 
 const appRoutes: Routes = [
   {
-    path: 'events',
+    path: '#events',
     component: BookComponent,
     data: { title: 'Book List' }
   },
   {
-    path: 'login',
+    path: '#login',
     component: DestinationListComponent,
     data: { title: 'Login' }
   },
   {
-    path: 'admin',
+    path: '#admin',
     component: AdminComponent,
     data: { title: 'Admin' }
   },
   {
-    path: 'signup',
+    path: '#signup',
     component: DestinationComponent,
     data: { title: 'Sign Up' }
   },
   {
-    path: 'aboutus',
+    path: '#aboutus',
     component: WebFormComponent,
     data: { title: 'Sign Up' }
   },
   {
-    path: 'book-details/:id',
+    path: '#book-details/:id',
     component: BookDetailComponent,
     data: { title: 'Book Details' }
   },
   {
-    path: 'book-create',
+    path: '#book-create',
     component: BookCreateComponent,
     data: { title: 'Create Book' }
   },
