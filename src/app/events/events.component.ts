@@ -30,15 +30,12 @@ export class EventComponent implements OnInit {
   //   });
   // }
 
-
-
   ngOnInit() {
-    this.http.get('/book').subscribe(data => {
+    this.http.get('/eve').subscribe(data => {
       console.log(data);
       this.events = data;
     });
   }
-
 
   logout() {
     localStorage.removeItem('jwtToken');
@@ -68,5 +65,4 @@ export class EventComponent implements OnInit {
 //       this.books = data;
 //     });
 //   }
-
 // }
