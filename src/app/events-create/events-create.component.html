@@ -1,34 +1,29 @@
-<!-- <div class="container1">
-    <h1>Add New Event</h1>
+<div class="container">
+    <h1>Add New Book</h1>
     <div class="row">
       <div class="col-md-6">
         <form (ngSubmit)="saveBook()" #bookForm="ngForm">
           <div class="form-group">
-            <label for="name">Event Id</label>
-            <input type="text" class="form-control" [(ngModel)]="events.id" name="isbn" required>
+            <label for="name">Destination Name</label>
+            <input type="text" class="form-control" [(ngModel)]="events.isbn" name="isbn" required>
           </div>
           <div class="form-group">
-            <label for="name">Event Name</label>
-            <input type="text" class="form-control" [(ngModel)]="events.name" name="title" required>
+            <label for="name">Destination Type</label>
+            <input type="text" class="form-control" [(ngModel)]="events.title" name="title" required>
           </div>
           <div class="form-group">
-            <label for="name">Event Type</label>
-            <input type="text" class="form-control" [(ngModel)]="events.type" name="author" required>
-          </div>
-          <div class="form-group">
-            <label for="name">Event Location</label>
-            <input type="text" class="form-control" [(ngModel)]="events.location" name="author" required>
-          </div>
-          <div class="form-group">
-            <label for="name">Event Dates</label>
-            <input type="text" class="form-control" [(ngModel)]="events.date" name="author" required>
-          </div>
-          <div class="form-group">
-            <label for="name">Event Image</label>
-            <input type="text" class="form-control" [(ngModel)]="events.image" name="author" required>
+            <label for="name">Destination Budget</label>
+            <input type="text" class="form-control" [(ngModel)]="events.author" name="author" required>
           </div>
 
-
+          <!-- <div class="form-group">
+            <label for="name"> Destination Best Times To Visit</label>
+            <input type="text" class="form-control" [(ngModel)]="book.published_year" name="published_year" required>
+          </div> -->
+          <div class="form-group">
+            <label for="name">Destination Image</label>
+            <input type="text" class="form-control" [(ngModel)]="events.publisher" name="publisher" required>
+          </div>
           <div class="form-group">
             <button type="submit" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
           </div>
@@ -36,154 +31,3 @@
       </div>
     </div>
   </div>
-
-
- -->
-
- <!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> <!--including Google fonts Lato for our website-->
-
-  <!-- Bootstrap Files for Header section alone -->
-
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-  </head>
-  <body>
-    <div class = "container1">
-
-    <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand"><img src="/assets/images/sheero.png" alt="sheero_logo" class="sheero"></a>
-        <span class="navbar-text mx-auto">TripWithUs!</span>
-
-        <button class="navbar-toggler ml-auto navbar-light bg-light" data-toggle="collapse" data-target="#collapse_target">
-
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapse_target">
-        <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-                <a class="nav-link" routerLink="">Home</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" routerLink="aboutus">About Us</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" routerLink="signup">Sign Up</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" routerLink="login">Login</a>
-            </li>
-
-        </ul>
-        </div>
-    </nav>
-
-
-
-
-    <section class="add-events">
-                <div class="add-form-container">
-                <div class="row">
-                    <h2 style="color:#555454;">Add Events</h2>
-                </div>
-
-
-                <form (ngSubmit)="saveBook()" #bookForm="ngForm">
-                    <div class="form-group">
-                        <label for="name"> Id</label>
-                        <input type="text" class="form-control" [(ngModel)]="events.id" name="isbn" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="name">Event Name</label>
-                        <input type="text" class="form-control" [(ngModel)]="events.name" name="title" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="name">Event Type</label>
-                        <input type="text" class="form-control" [(ngModel)]="events.type" name="author" required>
-                      </div>
-
-                      <!-- <div class="form-group">
-                        <label for="name"> Destination Best Times To Visit</label>
-                        <input type="text" class="form-control" [(ngModel)]="book.published_year" name="published_year" required>
-                      </div> -->
-                      <div class="form-group">
-                        <label for="name">Event Image</label>
-                        <input type="text" class="form-control" [(ngModel)]="events.image" name="publisher" required>
-                      </div>
-
-
-
-
-                            <div class="submit-button1">
-                                <button type="submit" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
-                            </div>
-                </form>
-
-
-
-                    </div>
-    </section>
-                  </div>
-
-
-        <!----------------------------------  Mobile Form ------------------------------------------- -->
-            <div class="add-form-container-mobile">
-                <div class="row">
-                    <h2 style="color:#fff;">Add Events</h2>
-                </div>
-                <!------- Customer name row --------->
-                <div class="row">
-                    <form (ngSubmit)="saveBook()" #bookForm="ngForm">
-                        <div class="form-group">
-                            <label for="name"> Id</label>
-                            <input type="text" class="form-control" [(ngModel)]="events.id" name="isbn" required>
-                          </div>
-                          <div class="form-group">
-                            <label for="name">Event Name</label>
-                            <input type="text" class="form-control" [(ngModel)]="events.name" name="title" required>
-                          </div>
-                          <div class="form-group">
-                            <label for="name">Event Type</label>
-                            <input type="text" class="form-control" [(ngModel)]="events.type" name="author" required>
-                          </div>
-
-                          <!-- <div class="form-group">
-                            <label for="name"> Destination Best Times To Visit</label>
-                            <input type="text" class="form-control" [(ngModel)]="book.published_year" name="published_year" required>
-                          </div> -->
-                          <div class="form-group">
-                            <label for="name">Event Image</label>
-                            <input type="text" class="form-control" [(ngModel)]="events.image" name="publisher" required>
-                          </div>
-
-
-
-
-                                <div class="submit-button1">
-                                    <button type="submit" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
-                                </div>
-                    </form>
-
-                </div>
-                    </div>
-
-
-
-      <!------------------------------------------------------------------------------------------------------------------------->
-      <!--Bootstrap4 JS files -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  </body>
-</html>
