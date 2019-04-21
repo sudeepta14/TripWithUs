@@ -1,7 +1,4 @@
-.body{
-   background-image: url("/assets/images/events.jpg");
-    background-size: cover;
+.container1{
+   color:skyblue;
 }
-.container{
-  color: white;
-}
+
