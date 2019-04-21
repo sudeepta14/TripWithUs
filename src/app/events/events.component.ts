@@ -6,7 +6,7 @@ import { tap, catchError } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
 
 @Component({
-  selector: 'app-book',
+  selector: 'app-event',
   templateUrl: './events.component.html',
   styleUrls: ['./events.component.css']
 })

@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-book-create',
+  selector: 'app-event-create',
   templateUrl: './events-create.component.html',
   styleUrls: ['./events-create.component.css'],
   encapsulation: ViewEncapsulation.None
