@@ -33,7 +33,7 @@ export class EventComponent implements OnInit {
 
 
   ngOnInit() {
-    this.http.get('/eve').subscribe(data => {
+    this.http.get('/book').subscribe(data => {
       console.log(data);
       this.events = data;
     });
