@@ -76,7 +76,7 @@ const appRoutes: Routes = [
   { path: 'our-story', component: MainPageComponent },
       { path: 'when-where', component: WhenWhereComponent },
   { path: '',
-  component: SuccessComponent,
+  component: SampleComponent,
     pathMatch: 'full'
   }
 
