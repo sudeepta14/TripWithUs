@@ -109,11 +109,11 @@
         </thead>
         <tbody>
           <tr *ngFor="let event of events">
-            <td>{{ events.isbn }}</td>
-            <td>{{ events.title }}</td>
-            <td>{{ events.author }}</td>
-            <td>{{ events.publisher }}</td>
-            <td><a [routerLink]="['/book-details', events._id]">Show Detail</a></td>
+            <td>{{ event.isbn }}</td>
+            <td>{{ event.title }}</td>
+            <td>{{ event.author }}</td>
+            <td>{{ event.publisher }}</td>
+            <td><a [routerLink]="['/book-details', event._id]">Show Detail</a></td>
           </tr>
         </tbody>
       </table>
@@ -125,8 +125,8 @@
             <div class="col-md-4 col-sm-6 col-12"  style="color: #555;" *ngFor="let event of events">
                 <div class="card-body">
                 <img bind-src="event.publisher" alt="golden gate picture" class="img-fluid"/>
-                <h3 class="card-title mt-2">{{ events.isbn }}</h3>
-                <h5 class="card-subtitle">{{ events.author }}</h5>
+                <h3 class="card-title mt-2">{{ event.isbn }}</h3>
+                <h5 class="card-subtitle">{{ event.author }}</h5>
 
                 <a href="#" class="btn btn-primary">See more..</a>
                 </div>
