@@ -28,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use('/events', express.static(path.join(__dirname, 'dist')));
 app.use('/api', api);
 app.use('/book', book);
+app.use('/eve', eve);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
