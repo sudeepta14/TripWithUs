@@ -122,8 +122,7 @@ textarea {
 
 
 /************ Submit button *********************/
-/* .btn:link,
-.btn:visited,
+
 input[type=submit] {
   display: inline-block;
   margin-top: 2.5%;
@@ -134,14 +133,12 @@ input[type=submit] {
 }
 
 
-.btn-full:link,
-.btn-full:visited,
 input[type=submit] {
   background-color: #d35400;
   border: 1px solid #d35400;
   color: #fff;
   margin-right: 15%;
-} */
+}
 
 input[type=date],
 input[type=file]{
