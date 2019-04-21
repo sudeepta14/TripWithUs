@@ -12,7 +12,7 @@ import { of } from 'rxjs/observable/of';
 })
 export class EventComponent implements OnInit {
 
-  books: any;
+  events: any;
 
   constructor(private http: HttpClient, private router: Router) { }
 
@@ -33,9 +33,9 @@ export class EventComponent implements OnInit {
 
 
   ngOnInit() {
-    this.http.get('/book').subscribe(data => {
+    this.http.get('/events').subscribe(data => {
       console.log(data);
-      this.books = data;
+      this.events = data;
     });
   }
 
