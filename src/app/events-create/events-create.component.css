@@ -1,5 +1,251 @@
-.container{
+/* .container{
   /* background-image: url("xyz.jpg");
-  background-size: cover; */
+  background-size: cover;
   height: 900px;
+} */
+
+.nav-link {
+  font-size: 1.1em;
+  font-family: 'Lato', 'sans-serif';
+  cursor: pointer;
+  margin-left: 25px;
+  color: #fff;
+}
+
+nav .navbar-nav li {
+  margin-left: 25px;
+  }
+
+nav .navbar-nav li a{
+color: #fff !important;
+}
+
+.navbar .navbar-text {
+  color: white!important;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.sheero {
+  height: 60px;
+  width: auto;
+}
+
+/************ Basic Setup *******/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+
+  background-image: url("/assets/images/webform_wallpaper.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-color: #fff;
+  color: #555454;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;                        /******** Base Line font-size **********/
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+
+}
+
+.clearfix {zoom: 1} /*using to clear float anomalies */
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+/******** Reusable - Base components ***********/
+
+.row {
+  max-height: 1140px;                     /******** Base Line Height **********/
+  margin: 0 auto 0 auto;
+}
+
+section {
+  padding: 90px 0;                        /********* Base line padding  ********/
+}
+
+/********** Heading ***********/
+
+h2 {
+  font-weight: bold;
+  font-size: 180%;            /* expressed in %age of body font size: target/context = 36px/20px = 180% */
+  word-spacing: 2%;
+  margin-bottom: 8%;
+  margin-left: 19.8958333333%;     /* 960px is row width (context) ,so Target/Context = 191px/960px = 19.8958333333% */
+  padding-top: 2%;
+  letter-spacing: 1%;
+}
+
+
+/************* Add events Form ********************/
+.add-form-container {
+  width: 50%;                             /* Here context is section of width 90px, so target/context = 63px/90px = 70% */
+  height: 100%;                          /****** 100% of viewport height ********/
+  margin: 0 auto;
+  background-color: #fff;
+  /*border-radius: 25%; */
+}
+
+label {
+      display: block;
+      color: #555454;
+      font-weight: 400;
+  }
+
+.add-form {
+  padding-top: 3%;
+  width: 60%;                            /* context is row of width 960px, target/context = 576px/960px = 60% */
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 8%;
+  border-radius: 3%;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100%;
+}
+
+
+
+/************ Submit button *********************/
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  margin-top: 2.5%;
+  padding: 2% 8%;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 25%;
+}
+
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+  background-color: #d35400;
+  border: 1px solid #d35400;
+  color: #fff;
+  margin-right: 15%;
+}
+
+input[type=date],
+input[type=file]{
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 8%;
+  border-radius: 3%;
+  border: 1px solid #ccc;
+}
+
+
+textarea {
+  height: 20%;
+}
+
+
+
+  .submit-button {
+      text-align: center;
+      padding-bottom: 20%;
+  }
+
+
+.add-form-container-mobile {
+  display: none;
+}
+
+
+/***************************************************************/
+/****************** Media Queries ******************************/
+/***************************************************************/
+
+@media only screen and (max-width: 768px) {
+
+
+  section { padding: 10% 0;}
+
+  .add-form-container { display: none;}
+
+  .add-form-container-mobile {
+      padding-top: 10%;
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+  }
+
+  h2 {
+  font-weight: 300;
+  font-size: 180%;
+  word-spacing: 2%;
+  padding-bottom: 5%;
+  /*margin-left: 19.99999%;*/
+  width: auto;
+  padding-top: 2%;
+  letter-spacing: 1%;
+  }
+
+  label {
+      display: block;
+      color: #fff;
+      font-weight: 400;
+  }
+
+  input[type=text],
+  input[type=email],
+  select,
+  textarea {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 10%;
+  border-radius: 3%;
+  border: 1px solid #ccc;
+}
+
+
+input[type=date],
+input[type=file] {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 10%;
+  border-radius: 3%;
+  border: 1px solid #ccc;
+}
+
+
+textarea {
+  height: 20%;
+}
+
+
+  .submit-button {
+      text-align: center;
+      padding-bottom: 20%;
+  }
+
+  nav .navbar-nav li {
+    padding-top: 2%;
+    }
+
 }
