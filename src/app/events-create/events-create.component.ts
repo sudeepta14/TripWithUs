@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class EventsCreateComponent implements OnInit {
 
-  events = {};
+  book = {};
 
   constructor(private http: HttpClient, private router: Router) { }
 
@@ -18,7 +18,7 @@ export class EventsCreateComponent implements OnInit {
   }
 
   saveBook() {
-    this.http.post('/book', this.events)
+    this.http.post('/book', this.book)
       .subscribe(res => {
           let id = res['_id'];
           this.router.navigate(['/book-details', id]);
