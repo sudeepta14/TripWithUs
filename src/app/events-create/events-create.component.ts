@@ -4,8 +4,8 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-book-create',
-  templateUrl: './book-create.component.html',
-  styleUrls: ['./book-create.component.css'],
+  templateUrl: './events-create.component.html',
+  styleUrls: ['./events-create.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class EventsCreateComponent implements OnInit {

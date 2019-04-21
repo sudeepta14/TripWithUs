@@ -4,8 +4,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-book-detail',
-  templateUrl: './book-detail.component.html',
-  styleUrls: ['./book-detail.component.css'],
+  templateUrl: './events-detail.component.html',
+  styleUrls: ['./events-detail.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class EventsDetailComponent implements OnInit {
