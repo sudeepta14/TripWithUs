@@ -18,7 +18,7 @@ export class EventsCreateComponent implements OnInit {
   }
 
   saveBook() {
-    this.http.post('/events', this.events)
+    this.http.post('/book', this.events)
       .subscribe(res => {
           let id = res['_id'];
           this.router.navigate(['']);
