@@ -19,13 +19,13 @@ export class EventsDetailComponent implements OnInit {
   }
 
   getBookDetail(id) {
-    this.http.get('/events/'+id).subscribe(data => {
+    this.http.get('/book/'+id).subscribe(data => {
       this.events = data;
     });
   }
 
   deleteBook(id) {
-    this.http.delete('/events/'+id)
+    this.http.delete('/book/'+id)
       .subscribe(res => {
           this.router.navigate(['/events']);
         }, (err) => {
