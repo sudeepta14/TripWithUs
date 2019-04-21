@@ -4,15 +4,15 @@
       <div class="col-md-6">
         <form (ngSubmit)="saveBook()" #bookForm="ngForm">
           <div class="form-group">
-            <label for="name">Destination Name</label>
+            <label for="name">Event ID</label>
             <input type="text" class="form-control" [(ngModel)]="book.id" name="isbn" required>
           </div>
           <div class="form-group">
-            <label for="name">Destination Type</label>
+            <label for="name">Event Name</label>
             <input type="text" class="form-control" [(ngModel)]="book.name" name="title" required>
           </div>
           <div class="form-group">
-            <label for="name">Destination Budget</label>
+            <label for="name">Event Type</label>
             <input type="text" class="form-control" [(ngModel)]="book.type" name="author" required>
           </div>
 
@@ -21,15 +21,15 @@
             <input type="text" class="form-control" [(ngModel)]="book.published_year" name="published_year" required>
           </div> -->
           <div class="form-group">
-            <label for="name">Destination Image</label>
+            <label for="name">Event Location</label>
             <input type="text" class="form-control" [(ngModel)]="book.location" name="publisher" required>
           </div>
           <div class="form-group">
-              <label for="name">Destination Image</label>
+              <label for="name">Event Date</label>
               <input type="text" class="form-control" [(ngModel)]="book.date" name="publisher" required>
             </div>
             <div class="form-group">
-                <label for="name">Destination Image</label>
+                <label for="name">Event Image</label>
                 <input type="text" class="form-control" [(ngModel)]="book.image" name="publisher" required>
               </div>
           <div class="form-group">
