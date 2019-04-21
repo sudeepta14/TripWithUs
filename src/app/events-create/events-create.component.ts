@@ -21,7 +21,7 @@ export class EventsCreateComponent implements OnInit {
     this.http.post('/events', this.events)
       .subscribe(res => {
           let id = res['_id'];
-          this.router.navigate(['', id]);
+          this.router.navigate(['']);
         }, (err) => {
           console.log(err);
         }
