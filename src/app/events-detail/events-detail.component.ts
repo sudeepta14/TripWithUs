@@ -19,7 +19,7 @@ export class EventsDetailComponent implements OnInit {
   }
 
   getBookDetail(id) {
-    this.http.get('/book/'+id).subscribe(data => {
+    this.http.get('/events/'+id).subscribe(data => {
       this.events = data;
     });
   }
