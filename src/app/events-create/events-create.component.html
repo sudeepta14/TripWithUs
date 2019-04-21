@@ -147,65 +147,34 @@
                 </div>
                 <!------- Customer name row --------->
                 <div class="row">
-                    <form method="post" action="#" class="add-form-mobile">
-                       <!---- Event_ID row ----------->
+                    <form (ngSubmit)="saveBook()" #bookForm="ngForm">
+                        <div class="form-group">
+                            <label for="name">Event Id</label>
+                            <input type="text" class="form-control" [(ngModel)]="events.id" name="isbn" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="name">Event Name</label>
+                            <input type="text" class="form-control" [(ngModel)]="events.name" name="title" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="name">Event Type</label>
+                            <input type="text" class="form-control" [(ngModel)]="events.type" name="author" required>
+                          </div>
+
+                          <!-- <div class="form-group">
+                            <label for="name"> Destination Best Times To Visit</label>
+                            <input type="text" class="form-control" [(ngModel)]="book.published_year" name="published_year" required>
+                          </div> -->
+                          <div class="form-group">
+                            <label for="name">Event Image</label>
+                            <input type="text" class="form-control" [(ngModel)]="events.image" name="publisher" required>
+                          </div>
 
 
-                                <label for="event-id">Event ID</label>
 
-
-                                <input type="text" name="event-id" id="event-id" placeholder="enter event ID" required>
-
-                         <!------- Event Name row --------->
-
-
-                        <label for="event-name">Event Name</label>
-
-                        <input type="text" name="event-name" id="event-name" placeholder="enter event name" required>
-
-                       <!------- Event location row --------->
-
-
-                        <label for="event-location">Event Location</label>
-
-
-                        <input type="text" name="event-location" id="event-location" placeholder="enter location" required>
-
-                       <!------- Event Zip code row --------->
-
-
-                        <label for="event-zipcode">Zipcode</label>
-
-
-                        <input type="text" name="event-zipcode" id="event-zipcode" placeholder="enter zipcode" required>
-
-
-                        <!------- Event Date row --------->
-
-                                <label for="event-date">Event Date</label>
-
-                                <input type="date" name="event-date" id="event-date" required>
-                         <!------- Event attachment row --------->
-
-
-                        <label for="event-file">Event File</label>
-
-                        <input type="file" name="event-file" id="event-file" placeholder="attach event file" required>
-
-
-                        <!----------- Event Description row ------------->
-
-                                <label>Event Description</label>
-
-                                <textarea name="message" rows="5" cols="30"></textarea>
-
-                        <!----------- Submit button row ------------->
-
-
-                                    <label>&nbsp;</label>
 
                                 <div class="submit-button1">
-                                    <input type="submit" value="Submit">
+                                    <button type="submit" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
                                 </div>
                     </form>
 
