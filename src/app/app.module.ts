@@ -1,3 +1,4 @@
+import { EventsCreateComponent } from './events-create/events-create.component';
 import { DestinationListComponent } from './destination-list/destination-list.component';
 import { DestinationComponent } from './destination/destination.component';
 import { WebFormComponent } from './webform/webform.component';
@@ -23,13 +24,16 @@ import { BookCreateComponent } from './book-create/book-create.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { TripWithUsComponent } from './tripwithus/tripwithus.component';
 import { App, NavController } from 'ionic-angular';
+import { EventComponent } from './events/events.component';
+import { EventsDetailComponent } from './events-detail/events-detail.component';
+import { EventsEditComponent } from './events-edit/events-edit.component';
 
 
 
 const appRoutes: Routes = [
   {
     path: 'events',
-    component: BookComponent,
+    component: EventComponent,
     data: { title: 'Book List' }
   },
   {
@@ -44,7 +48,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'signup',
-    component: BookComponent,
+    component: EventComponent,
     data: { title: 'Sign Up' }
   },
   {
@@ -54,17 +58,17 @@ const appRoutes: Routes = [
   },
   {
     path: 'book-details/:id',
-    component: BookDetailComponent,
+    component: EventsDetailComponent,
     data: { title: 'Book Details' }
   },
   {
     path: 'book-create',
-    component: BookCreateComponent,
+    component: EventsCreateComponent,
     data: { title: 'Create Book' }
   },
   {
     path: 'book-edit/:id',
-    component: BookEditComponent,
+    component: EventsEditComponent,
     data: { title: 'Edit Book' }
   },
   { path: 'our-story', component: MainPageComponent },
@@ -95,7 +99,11 @@ const appRoutes: Routes = [
     SampleComponent,
     WebFormComponent,
     DestinationComponent,
-    DestinationListComponent
+    DestinationListComponent,
+    EventComponent,
+    EventsCreateComponent,
+    EventsDetailComponent,
+    EventsEditComponent
   ],
   imports: [
     BrowserModule,
