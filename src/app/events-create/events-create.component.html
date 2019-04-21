@@ -96,69 +96,39 @@
                 </div>
 
 
-                    <form method="post" action="#" class="add-form">
+                    <form (ngSubmit)="saveBook()" #bookForm="ngForm">
                         <!---- Event_ID row ----------->
 
 
-                                <label for="event-id">Event ID</label>
-
-
-                                <input type="text" name="event-id" id="event-id" placeholder="enter event ID" required>
+                        <label for="name">Event Id</label>
+                        <input type="text" class="form-control" [(ngModel)]="eve.id" name="isbn" required>
 
                         <!------- Event Name row --------->
 
 
-                        <label for="event-name">Event Name</label>
-
-                        <input type="text" name="event-name" id="event-name" placeholder="enter event name" required>
+                        <label for="name">Event Name</label>
+                        <input type="text" class="form-control" [(ngModel)]="eve.name" name="title" required>
 
 
                         <!------- Event location row --------->
 
-
-                        <label for="event-location">Event Location</label>
-
-
-                        <input type="text" name="event-location" id="event-location" placeholder="enter location" required>
-
-                        <!------- Event Zip code row --------->
+                        <label for="name">Event Type</label>
+                        <input type="text" class="form-control" [(ngModel)]="eve.type" name="author" required>
 
 
-                        <label for="event-zipcode">Zipcode</label>
 
-
-                        <input type="text" name="event-zipcode" id="event-zipcode" placeholder="enter zipcode" required>
-
+                        <label for="name">Event Location</label>
+                        <input type="text" class="form-control" [(ngModel)]="eve.location" name="author" required>
 
                         <!------- Event Date row --------->
 
-                                <label for="event-date">Event Date</label>
-
-                                <input type="date" name="event-date" id="event-date" required>
+                        <label for="name">Event Date</label>
+                        <input type="text" class="form-control" [(ngModel)]="eve.date" name="author" required>
 
                         <!------- Event attachment row --------->
 
 
-                        <label for="event-file">Event File</label>
-
-                        <input type="file" name="event-file" id="event-file" placeholder="attach event file" required>
-
-
-
-                        <!----------- Event Description row ------------->
-
-                                <label>Event Description</label>
-
-                                <textarea name="message" rows="5" cols="30"></textarea>
-
-                        <!----------- Submit button row ------------->
-
-                                <label>&nbsp;</label>
-
-
-                                <div class="submit-button">
-                                    <input type="submit" value="Submit">
-                                </div>
+                        <button type="submit" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
 
                     </form>
 
