@@ -92,11 +92,11 @@
         </thead>
         <tbody>
           <tr *ngFor="let event of events">
-            <td>{{ event.id }}</td>
-            <td>{{ event.name }}</td>
-            <td>{{ event.type }}</td>
-            <td>{{ event.location }}</td>
-            <td>{{ event.date }}</td>
+            <td>{{ event.isbn }}</td>
+            <td>{{ event.author }}</td>
+            <td>{{ event.title }}</td>
+            <td>{{ event.publisher }}</td>
+            <td>{{ event.publisher }}</td>
             <td><a [routerLink]="['/book-details', event._id]">Show Detail</a></td>
           </tr>
         </tbody>
