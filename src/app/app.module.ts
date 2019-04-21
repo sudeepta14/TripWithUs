@@ -1,3 +1,4 @@
+
 import { EventsCreateComponent } from './events-create/events-create.component';
 import { DestinationListComponent } from './destination-list/destination-list.component';
 import { DestinationComponent } from './destination/destination.component';
@@ -27,6 +28,7 @@ import { App, NavController } from 'ionic-angular';
 import { EventComponent } from './events/events.component';
 import { EventsDetailComponent } from './events-detail/events-detail.component';
 import { EventsEditComponent } from './events-edit/events-edit.component';
+import { SuccessComponent } from './success/success.component';
 
 
 
@@ -74,7 +76,7 @@ const appRoutes: Routes = [
   { path: 'our-story', component: MainPageComponent },
       { path: 'when-where', component: WhenWhereComponent },
   { path: '',
-  component: SampleComponent,
+  component: SuccessComponent,
     pathMatch: 'full'
   }
 
@@ -103,7 +105,8 @@ const appRoutes: Routes = [
     EventComponent,
     EventsCreateComponent,
     EventsDetailComponent,
-    EventsEditComponent
+    EventsEditComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
