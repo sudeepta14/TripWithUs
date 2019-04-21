@@ -1,16 +1,16 @@
 <div class="container">
-    <h1>{{ events.title }}</h1>
+    <h1>{{ events.name }}</h1>
     <dl class="list">
-      <dt>ISBN</dt>
-      <dd>{{ events.isbn }}</dd>
-      <dt>Author</dt>
-      <dd>{{ events.author }}</dd>
-      <dt>Publish Year</dt>
-      <dd>{{ events.published_year }}</dd>
-      <dt>Publisher</dt>
-      <dd>{{ events.publisher }}</dd>
-      <dt>Update Date</dt>
-      <dd>{{ events.updated_date | date:'short' }}</dd>
+      <dt>Event ID</dt>
+      <dd>{{ events.id }}</dd>
+      <dt>Event Type</dt>
+      <dd>{{ events.type }}</dd>
+      <dt>Events Location</dt>
+      <dd>{{ events.location }}</dd>
+      <dt>Dates</dt>
+      <dd>{{ events.date }}</dd>
+      <dt>Images</dt>
+      <dd>{{ events.image | date:'short' }}</dd>
     </dl>
   </div>
   <div class="row">

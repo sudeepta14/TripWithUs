@@ -4,26 +4,35 @@
       <div class="col-md-6">
         <form (ngSubmit)="saveBook()" #bookForm="ngForm">
           <div class="form-group">
+            <label for="name">Event Id</label>
+            <input type="text" class="form-control" [(ngModel)]="events.id" name="isbn" required>
+          </div>
+          <div class="form-group">
             <label for="name">Event Name</label>
-            <input type="text" class="form-control" [(ngModel)]="events.isbn" name="isbn" required>
+            <input type="text" class="form-control" [(ngModel)]="events.name" name="title" required>
           </div>
           <div class="form-group">
             <label for="name">Event Type</label>
-            <input type="text" class="form-control" [(ngModel)]="events.title" name="title" required>
+            <input type="text" class="form-control" [(ngModel)]="events.type" name="author" required>
           </div>
           <div class="form-group">
-            <label for="name">Event Budget</label>
-            <input type="text" class="form-control" [(ngModel)]="events.author" name="author" required>
+            <label for="name">Event Location</label>
+            <input type="text" class="form-control" [(ngModel)]="events.location" name="author" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Event Dates</label>
+            <input type="text" class="form-control" [(ngModel)]="events.date" name="author" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Event Image</label>
+            <input type="text" class="form-control" [(ngModel)]="events.image" name="author" required>
           </div>
 
           <!-- <div class="form-group">
             <label for="name"> Destination Best Times To Visit</label>
             <input type="text" class="form-control" [(ngModel)]="book.published_year" name="published_year" required>
           </div> -->
-          <div class="form-group">
-            <label for="name">Event Image</label>
-            <input type="text" class="form-control" [(ngModel)]="events.publisher" name="publisher" required>
-          </div>
+
           <div class="form-group">
             <button type="submit" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
           </div>

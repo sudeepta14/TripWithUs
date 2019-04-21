@@ -2,19 +2,27 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var EventSchema = new Schema({
-  isbn: {
+  id: {
     type: String,
     required: true
   },
-  title: {
+  name: {
     type: String,
     required: true
   },
-  author: {
+  type: {
     type: String,
     required: true
   },
-  publisher: {
+  location: {
+    type: String,
+    required: true
+  },
+  date: {
+    type: String,
+    required: true
+  },
+  image: {
     type: String,
     required: true
   }
