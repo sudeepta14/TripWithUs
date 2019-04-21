@@ -19,14 +19,14 @@ export class EventsEditComponent implements OnInit {
   }
 
   getBook(id) {
-    this.http.get('/events/'+id).subscribe(data => {
+    this.http.get('/eve/'+id).subscribe(data => {
       this.book = data;
     });
   }
 
   updateBook(id) {
     this.book.updated_date = Date.now();
-    this.http.put('/events/'+id, this.book)
+    this.http.put('/eve/'+id, this.book)
       .subscribe(res => {
           let id = res['_id'];
           this.router.navigate(['/book-details', id]);

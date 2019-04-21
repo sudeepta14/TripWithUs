@@ -10,6 +10,7 @@ var config = require('./config/database');
 
 var api = require('./routes/api');
 var book = require('./routes/book');
+var eve = require('./routes/eve');
 
 var app = express();
 
