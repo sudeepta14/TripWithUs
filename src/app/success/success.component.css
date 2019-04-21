@@ -3,7 +3,7 @@
 html,body {
   background-image: url('http://getwallpapers.com/wallpaper/full/2/8/1/137884.jpg');
   background-color: rgba(0,0,0,0.5) !important;
-  filter: brightness(50%);
+  filter: alpha(opacity=50);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
