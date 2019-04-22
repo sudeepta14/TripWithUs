@@ -59,6 +59,16 @@ const appRoutes: Routes = [
     data: { title: 'Sign Up' }
   },
   {
+    path: 'destinations/signup',
+    component: SignupComponent,
+    data: { title: 'Sign Up' }
+  },
+  {
+    path: 'destinations/login',
+    component: LoginComponent,
+    data: { title: 'Sign Up' }
+  },
+  {
     path: 'aboutus',
     component: AboutUsComponent,
     data: { title: 'Sign Up' }
