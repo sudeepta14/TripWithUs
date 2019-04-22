@@ -12,7 +12,8 @@ import { of } from 'rxjs/observable/of';
 })
 export class LoginComponent implements OnInit {
 
-  loginData = { username:'', password:'' };
+  loginData = { email:'', password:'' };
+  // loginData: any = {};
   message = '';
   data: any;
 
@@ -22,12 +23,23 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    console.log('Email : '+this.loginData.email);
+    console.log('Password : '+this.loginData.password);
+
+
     this.http.post('/api/signin',this.loginData).subscribe(resp => {
       this.data = resp;
       localStorage.setItem('jwtToken', this.data.token);
-      this.router.navigate(['events']);
+      if(this.loginData.email === "admin@tripwithus.com" && this.loginData.password === "admin"){
+         this.router.navigate(['event-admin'])
+      }else{
+        this.router.navigate(['event2']);
+      // this.router.navigate(['navbar']);
+      }
+
     }, err => {
       this.message = err.error.msg;
+      this.data = "Sorry, you have entered invalid credentials";
     });
   }
 

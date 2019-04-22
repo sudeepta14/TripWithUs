@@ -1,24 +1,4 @@
-<!-- <div class="container">
-    <form class="form-signin" (ngSubmit)="login()" #loginForm="ngForm">
-      <div class="alert alert-warning alert-dismissible" role="alert" *ngIf="message !== ''">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        {{message}}
-      </div>
-      <h2 class="form-signin-heading">Please sign in</h2>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" class="form-control" placeholder="Email address" [(ngModel)]="loginData.username" name="username" required/>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" class="form-control" placeholder="Password" [(ngModel)]="loginData.password" name="password" required/>
-      <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!loginForm.form.valid">Sign in</button>
-      <p>
-        Not a member? <a [routerLink]="['/signup']">Signup here</a>
-      </p>
-    </form>
-  </div> -->
-
-
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Login Page</title>
@@ -37,31 +17,40 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+		<app-navbar></app-navbar> <!--Render Navbar-->
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
 				<h3>Login Here <span style="float:right;"><button class="btn btn-success" (click)="logout()">Home</button></span></h3>
 			</div>
-			<div class="card-body">
+			<div class="card-body"> <!---Card container for input elements - Email and Pasword and Submit button -->
+				  <!---Form component in HTML, CSS3 with submit event listner on it--->
           <form class="form-signin" (ngSubmit)="login()" #loginForm="ngForm">
-					<div class="input-group form-group">
+					<div class="input-group form-group"> <!--Division consisting of form-control elements-->
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-            <input type="email" class="form-control" placeholder="Email address" [(ngModel)]="loginData.username" name="username" required/>
+						<!--Input for email address with bindings to backend for transaction-->
+            <input type="email" class="form-control" placeholder="Email address" [(ngModel)]="loginData.email" name="email" required/>
 
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
+						 <!--Input for password with bindings to backend for transaction-->
 						<input type="password" class="form-control" placeholder="Password" [(ngModel)]="loginData.password" name="password" required/>
 					</div>
-
+          <!--Submit button element of form compnent to trigger event to the event listener-->
 					<div class="form-group form-button">
                         <button type="submit" value="Login" class="btn login_btn">Login</button>
 					</div>
+					  <!--Error Message Dispalyed-->
+							<div class = "alert-box">
+									<p class="alert-message">{{data}}</p>
+							</div>
+
 				</form>
 			</div>
 			<div class="card-footer">

@@ -74,6 +74,11 @@ font-style: italic;
     padding: 20px 0px;
 }
 
+.form-control {
+  width: 50%;
+  margin-bottom: 60px;
+}
+
 .input-group-prepend span {
 width: 40px;
 background-color: #FFC312;
@@ -112,4 +117,22 @@ color: white;
 color: whitesmoke;
 text-decoration: none;
 margin-left: 15px;
+}
+
+
+.alert-message {
+  font-size: 110%;
+  color: brown;
+  font-weight:bold;
+}
+
+.alert-box {
+  font-size: 150%;
+  background-color:white;
+  box-sizing: border-box;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  border: 3px solid green;
+  padding: 10px;
 }
