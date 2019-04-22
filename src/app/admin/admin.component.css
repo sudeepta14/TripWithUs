@@ -6,9 +6,7 @@
 }
 
 body, html {
-	height: 100%;
-	font-family: Oswald-Regular, sans-serif;
-  background-image: url("NYC.jpg")
+
 }
 
 /*---------------------------------------------*/
@@ -131,6 +129,9 @@ iframe {
 .limiter {
   width: 100%;
   margin: 0 auto;
+  height: 100%;
+	font-family: Oswald-Regular, sans-serif;
+  background-image: url("NYC.jpg")
 }
 
 .container-login100 {
