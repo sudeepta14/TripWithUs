@@ -41,13 +41,33 @@
 
         </button>
 
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <ul class="navbar-nav ml-auto">
 
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="aboutus">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="signup">Sign Up</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="login">Login</a>
+                </li>
+
+            </ul>
+            </div>
     </nav>
     <hr>
 <div class="limiter">
 <div class="container-login100">
 <div class="wrap-login100 p-t-90 p-b-30"><form class="login100-form validate-form">
-<span class="login100-form-title p-b-40"> Welcome Admin! </span> <p><a class="btn btn-success" (click)="logout()"> Logout </a></p>
+<span class="login100-form-title p-b-40"> Welcome Admin! </span>
 
 <br>
 <p><a class="btn-login-with bg2" [routerLink]="['/events']"> Add Events </a></p>
