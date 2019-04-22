@@ -55,67 +55,57 @@
 
 
                     <form (ngSubmit)="saveBook()" #bookForm="ngForm" class="add-form">
-                        <!---- Event ID row ----------->
+                     <!---- Event ID row ----------->
 
-                        <div class="form-group">
-                                <label for="name">Event ID</label>
-
-
-                                <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.id" name="isbn" placeholder="enter id" required>
-                          </div>
-
-                        <!------- Event name row --------->
-
-                        <div class="form-group">
-                        <label for="name">Event Name</label>
-
-                        <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.name" name="title" placeholder="enter event name, e.g. Spring festival etc." required>
-
-                       </div>
-
-                        <!------- Event Type row --------->
-
-                        <div class="form-group">
-                        <label for="name">Event Type</label>
+                     <div class="form-group">
+                        <label for="name">Destination City</label>
 
 
-                      <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.type" name="author" placeholder="enter type e.g. music concert etc." required>
-                    </div>
-
-                    <!------- Event Location row --------->
-
-                    <div class="form-group">
-                      <label for="name">Event Location</label>
-
-
-                    <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.location" name="publisher" placeholder="enter location e.g. California etc." required>
+                        <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.city" name="city" placeholder="enter id" required>
                   </div>
+<!------- Event name row --------->
 
-                  <!------- Event Date row --------->
+<div class="form-group">
+<label for="name">Destination Activity</label>
 
-                  <div class="form-group">
-                    <label for="name">Event Date</label>
+<input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.activity" name="activity" placeholder="enter event name, e.g. Spring festival etc." required>
+
+</div>
+
+<!------- Event Type row --------->
+
+<div class="form-group">
+<label for="name">Destination Budget</label>
 
 
-                  <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.date" name="publisher" placeholder="enter range e.g. Oct 2, 2019 - Oct 4, 2019" required>
-                </div>
+<input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.budget" name="budget" placeholder="enter type e.g. music concert etc." required>
+</div>
 
-                        <!------- Events Image --------->
+<!------- Event Location row --------->
+
+<div class="form-group">
+<label for="name">Destination Image</label>
+
+
+<input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.image" name="image" placeholder="enter location e.g. California etc." required>
+</div>
+
+<!------- Event Date row --------->
+
+
+
+
+
+
+                      <!----------- Save button row ------------->
+
+
+
 
                       <div class="form-group">
-                        <label for="name">Event Image</label>
-
-
-                        <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.image" name="publisher" placeholder="copy image address of event & paste here" required>
+                        <button type="submit" style="width:100%;padding:3% 0;font-size: 1em;margin-top:2%;" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
                       </div>
-
-                        <!----------- Save button row ------------->
-
-                          <div class="form-group">
-                            <button type="submit" style="width:100%;padding:2% 0;font-size: 1em;margin-top:2%;" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
-                          </div>
-
-                    </form>
+                  </form>
 
 
                     </div>
