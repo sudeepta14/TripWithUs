@@ -50,7 +50,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'dests',
-    component: DestinationComponent,
+    component: DestinationListComponent,
     data: { title: 'Admin' }
   },
   {
