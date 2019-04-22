@@ -2,7 +2,7 @@ import { SuccessEventComponent } from './success-event/success-event.component';
 import { NavigatorComponent } from './navbar/navbar.component';
 import { EventsCreateComponent } from './events-create/events-create.component';
 import { DestinationListComponent } from './destination-list/destination-list.component';
-import { DestinationComponent } from './destination/destination.component';
+
 import { WebFormComponent } from './webform/webform.component';
 import { SampleComponent } from './sample/sample.component';
 import { UserProfile } from './userprofile/userprofile.component';
@@ -211,7 +211,7 @@ const appRoutes: Routes = [
     UserProfile,
     SampleComponent,
     WebFormComponent,
-    DestinationComponent,
+
     DestinationListComponent,
     EventComponent,
     EventsCreateComponent,
