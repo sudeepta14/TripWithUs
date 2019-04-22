@@ -18,7 +18,7 @@ export class BookCreateComponent implements OnInit {
   }
 
   saveBook() {
-    this.http.post('/book', this.book)
+    this.http.post('/dest', this.book)
       .subscribe(res => {
           let id = res['_id'];
           this.router.navigate(['success']);
@@ -28,7 +28,7 @@ export class BookCreateComponent implements OnInit {
       );
   }
   deleteBook(id) {
-    this.http.delete('/book/'+id)
+    this.http.delete('/dest/'+id)
       .subscribe(res => {
           this.router.navigate(['/books']);
         }, (err) => {

@@ -18,7 +18,7 @@ export class DestinationListComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
-    this.http.get('/book').subscribe(data => {
+    this.http.get('/dest').subscribe(data => {
       console.log(data);
       this.books = data;
     });
@@ -29,7 +29,7 @@ export class DestinationListComponent implements OnInit {
     this.router.navigate(['dests']);
   }
   deleteBook(id) {
-    this.http.delete('/book/' +id)
+    this.http.delete('/dest/' +id)
       .subscribe(res => {
         this.router.navigate(['delete']);
         }, (err) => {
