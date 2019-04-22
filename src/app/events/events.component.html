@@ -1,43 +1,20 @@
 
-<!-- <div class="container">
-    <h1>Book List
-      <a [routerLink]="['/book-create']" class="btn btn-default btn-lg">
-        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-      </a>
-    </h1>
-    <button class="btn btn-success" (click)="logout()">Logout</button>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let book of books">
-          <td>{{ book.title }}</td>
-          <td>{{ book.author }}</td>
-          <td><a [routerLink]="['/book-details', book._id]">Show Detail</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div> -->
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
   <head>
     <title>TripWithUs!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
   </head>
+
 <body>
   <!-- Navigation -->
     <nav class="navbar navbar-expand-md">
@@ -72,113 +49,68 @@
         </ul>
         </div>
     </nav>
-    <div class="container">
-        <h1>Events List
-            <a [routerLink]="['/book-create']" class="btn btn-success">
+    <!--
+       <button class="btn btn-success" (click)="logout()">Logout</button>-->
+
+       <div class="container">
+        <h1>Events List</h1>
+
+        <h2>Add Events
+            <a [routerLink]="['/book-create']" class="btn btn-default btn-lg">
               <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
             </a>
-          </h1>
-       <!-- <button class="btn btn-success" (click)="logout()">Logout</button> -->
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Event ID</th>
-            <th>Events Name</th>
-            <th>Events Type</th>
-            <th>Events Location</th>
-            <th>Events Date</th>
-
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let event of events">
-            <td>{{ event.id }}</td>
-            <td>{{ event.name }}</td>
-            <td>{{ event.type }}</td>
-            <td>{{ event.location }}</td>
-            <td>{{ event.date }}</td>
-            <td><a [routerLink]="['/book-details', event._id]">Show Detail</a></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="container mb-5">
-          &nbsp;
-          <div class="portfolio-items">
-            <div  class="row itemsBlock">
-            <div class="col-md-4 col-sm-6 col-12"  style="color: #555;" *ngFor="let event of events">
-                <div class="card-body">
-                <img bind-src="event.image" alt="golden gate picture" class="img-fluid" style="width:300px;height:200px;"/>
-                <h3 class="card-title mt-2">{{ event.name }}</h3>
-                <h5 class="card-subtitle">{{ event.location }}</h5>
+          </h2>
 
 
-                </div>
-                <br>
-            </div>
-            </div>
+
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Event ID</th>
+                <th>Events Name</th>
+                <th>Events Type</th>
+                <th>Events Location</th>
+                <th>Events Date</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let event of events">
+                <td>{{ event.id }}</td>
+                <td>{{ event.name }}</td>
+                <td>{{ event.type }}</td>
+                <td>{{ event.location }}</td>
+                <td>{{ event.date }}</td>
+                <td><a [routerLink]="['/book-details', event._id]">Show Detail</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+     <div class="portfolio-items">
+      <div  class="row dest-format">
+      <div class="col-md-4 col-sm-6 col-12 d-flex align-items-stretch mb-5" style="color: #555;" *ngFor="let event of events">
+          <div class="card-body">
+              <img bind-src="event.image" alt="golden gate picture" class="img-fluid" style="width:300px;height:200px;"/>
+          <h3 class="card-title mt-2">{{ Name: {{event.name }}</h3>
+          <h5 class="card-subtitle mt-2">Location: {{ event.location }}</h5>
+          <!-- <h5 class="card-subtitle mt-2">Activity: {{ book.title }}</h5> -->
           </div>
-</div>
+          <br>
+      </div>
+      </div>
+    </div>
 
 
 
     </div>
 
-     <!-- <div class="search-part">
-    //     <div class="input-group">
-    //         <input type="text" class="form-control" onkeyup="myFunction()" placeholder="Search...">
-    //         <div class="input-group-append">
-    //             <button class="btn btn-secondary typebutton">
-    //                 <i class="fa fa-search"></i>
-    //             </button>
-    //         </div>
-    //     </div>
-    // </div> -->
-<!-- <div class = "startHere"> -->
-    <!-- <div id="portfolio">
-        <div class="container">
-          <div class="section-title text-center center">
-            <h2>Destination Grid View</h2>
-            <hr>
-          </div>
-          <div class="categories">
-            <ul class="cat">
-              <li>
-                <ol class="type">
-                  <li><a routerLink="signup"  onclick = "gridChange();" filter="*" class="active">All</a></li>
-                  <li><a  routerLink="signup" onclick = "gridChange();" data-filter=".web">Web Design</a></li>
-                  <li><a  routerLink="signup" onclick = "gridChange();" data-filter=".photography">Photography</a></li>
-                  <li><a  routerLink="signup" onclick = "gridChange();" data-filter=".product">Product Design</a></li>
-                </ol>
-              </li>
-            </ul>
-            <div class="clearfix"></div>
-          </div>
-          </div> -->
 
+   <!-- </div>-->
 
-
-
-
-
-
-
-<!-- </div>
-    </div>
-
-        <div class="ptext">
-
-        </div>
-</div>
-</div> -->
-
-
-<!--Bootstrap4 JS files -->
+ <!--Bootstrap4 JS files -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
-
 </html>
 
