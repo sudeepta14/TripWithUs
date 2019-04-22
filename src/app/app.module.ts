@@ -31,8 +31,6 @@ import { EventsEditComponent } from './events-edit/events-edit.component';
 import { SuccessComponent } from './success/success.component';
 import { UserEventComponent } from './user-event/user-event.component';
 
-
-
 const appRoutes: Routes = [
   {
     path: 'events',
