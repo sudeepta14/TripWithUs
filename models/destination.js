@@ -2,19 +2,19 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var BookSchema = new Schema({
-  isbn: {
+  city: {
     type: String,
     required: true
   },
-  title: {
+  activity: {
     type: String,
     required: true
   },
-  author: {
+  budget: {
     type: String,
     required: true
   },
-  publisher: {
+  image: {
     type: String,
     required: true
   }

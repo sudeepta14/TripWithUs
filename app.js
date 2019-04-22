@@ -11,6 +11,7 @@ var config = require('./config/database');
 var api = require('./routes/api');
 var book = require('./routes/book');
 var eve = require('./routes/eve');
+var dest = require('./routes/dest');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/events', express.static(path.join(__dirname, 'dist')));
 app.use('/api', api);
 app.use('/book', book);
 app.use('/eve', eve);
+app.use('/dest', dest);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
