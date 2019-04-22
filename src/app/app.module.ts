@@ -70,7 +70,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'aboutus',
-    component: AboutUsComponent,
+    component: AdminComponent,
     data: { title: 'Sign Up' }
   },
   {
