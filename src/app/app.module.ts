@@ -76,6 +76,21 @@ const appRoutes: Routes = [
     data: { title: 'Admin' }
   },
   {
+    path: 'events/aboutus',
+    component: AboutUsComponent,
+    data: { title: 'Admin' }
+  },
+  {
+    path: 'events/signup',
+    component: SignupComponent,
+    data: { title: 'Admin' }
+  },
+  {
+    path: 'events/login',
+    component: LoginComponent,
+    data: { title: 'Admin' }
+  },
+  {
     path: 'delete',
     component: DeleteComponent,
     data: { title: 'Admin' }
