@@ -89,11 +89,7 @@ const appRoutes: Routes = [
     component: LoginComponent,
     data: { title: 'Sign Up' }
   },
-  {
-    path: 'aboutus',
-    component: AdminComponent,
-    data: { title: 'Sign Up' }
-  },
+
   {
     path: 'userpage',
     component: TripWithUsComponent,
