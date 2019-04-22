@@ -14,22 +14,6 @@ export class BookComponent implements OnInit {
 
   books: any;
 
-
-
-  // ngOnInit() {
-  //   let httpOptions = {
-  //     headers: new HttpHeaders({ 'Authorization': localStorage.getItem('jwtToken') })
-  //   };
-  //   this.http.get('/book', httpOptions).subscribe(data => {
-  //     this.books = data;
-  //     console.log(this.books);
-  //   }, err => {
-  //     if(err.status === 401) {
-  //       this.router.navigate(['login']);
-  //     }
-  //   });
-  // }
-
   constructor(private router: Router, private route: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit() {
