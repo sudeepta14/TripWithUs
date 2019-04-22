@@ -85,7 +85,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'book-create',
-    component: EventsCreateComponent,
+    component: BookCreateComponent,
     data: { title: 'Create Book' }
   },
   {
