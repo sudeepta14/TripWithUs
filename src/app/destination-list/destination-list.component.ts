@@ -26,7 +26,7 @@ export class DestinationListComponent implements OnInit {
 
   logout() {
     localStorage.removeItem('jwtToken');
-    this.router.navigate(['dests']);
+    this.router.navigate(['dests1']);
   }
   deleteBook(id) {
     this.http.delete('/dest/' +id)

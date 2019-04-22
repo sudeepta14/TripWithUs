@@ -96,7 +96,7 @@ const appRoutes: Routes = [
     data: { title: 'Admin' }
   },
   {
-    path: 'dests',
+    path: 'dests1',
     component: DestinationListComponent,
     data: { title: 'Admin' }
   },
