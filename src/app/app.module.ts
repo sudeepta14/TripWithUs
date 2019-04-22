@@ -126,6 +126,11 @@ const appRoutes: Routes = [
     data: { title: 'Create Book' }
   },
   {
+    path: 'event-create',
+    component: EventsCreateComponent,
+    data: { title: 'Create Book' }
+  },
+  {
     path: 'book-edit/:id',
     component: EventsEditComponent,
     data: { title: 'Edit Book' }
