@@ -40,7 +40,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'login',
-    component: DestinationListComponent,
+    component: LoginComponent,
     data: { title: 'Login' }
   },
   {
@@ -50,12 +50,12 @@ const appRoutes: Routes = [
   },
   {
     path: 'signup',
-    component: EventComponent,
+    component: SignupComponent,
     data: { title: 'Sign Up' }
   },
   {
     path: 'aboutus',
-    component: WebFormComponent,
+    component: AboutUsComponent,
     data: { title: 'Sign Up' }
   },
   {
