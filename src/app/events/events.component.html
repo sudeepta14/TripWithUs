@@ -81,7 +81,7 @@
                 <td>{{ event.type }}</td>
                 <td>{{ event.location }}</td>
                 <td>{{ event.date }}</td>
-                <td><a [routerLink]="['/book-details', event._id]">Show Detail</a></td>
+                <td><button class="btn btn-danger" type="button" (click)="deleteBook(book._id)">DELETE</button></td>
               </tr>
             </tbody>
           </table>

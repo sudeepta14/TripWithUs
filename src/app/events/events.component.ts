@@ -41,6 +41,15 @@ export class EventComponent implements OnInit {
     localStorage.removeItem('jwtToken');
     this.router.navigate(['login']);
   }
+  deleteBook(id) {
+    this.http.delete('/eve/'+id)
+      .subscribe(res => {
+          this.router.navigate(['/events']);
+        }, (err) => {
+          console.log(err);
+        }
+      );
+  }
 
 }
 
