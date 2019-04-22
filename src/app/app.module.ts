@@ -49,6 +49,11 @@ const appRoutes: Routes = [
     data: { title: 'Admin' }
   },
   {
+    path: 'dests',
+    component: BookComponent,
+    data: { title: 'Admin' }
+  },
+  {
     path: 'signup',
     component: SignupComponent,
     data: { title: 'Sign Up' }
