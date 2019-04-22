@@ -31,9 +31,9 @@ export class LoginComponent implements OnInit {
       this.data = resp;
       localStorage.setItem('jwtToken', this.data.token);
       if(this.loginData.email === "admin@tripwithus.com" && this.loginData.password === "admin"){
-         this.router.navigate(['event-admin'])
+         this.router.navigate(['adminpage'])
       }else{
-        this.router.navigate(['aboutus']);
+        this.router.navigate(['userpage']);
       // this.router.navigate(['navbar']);
       }
 

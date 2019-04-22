@@ -91,6 +91,16 @@ const appRoutes: Routes = [
     data: { title: 'Sign Up' }
   },
   {
+    path: 'userpage',
+    component: TripWithUsComponent,
+    data: { title: 'Sign Up' }
+  },
+  {
+    path: 'adminpage',
+    component: AdminComponent,
+    data: { title: 'Sign Up' }
+  },
+  {
     path: 'book-details/:id',
     component: EventsDetailComponent,
     data: { title: 'Book Details' }
