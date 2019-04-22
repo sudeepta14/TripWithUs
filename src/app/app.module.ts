@@ -1,3 +1,4 @@
+import { SuccessEventComponent } from './success-event/success-event.component';
 import { NavigatorComponent } from './navbar/navbar.component';
 import { EventsCreateComponent } from './events-create/events-create.component';
 import { DestinationListComponent } from './destination-list/destination-list.component';
@@ -52,6 +53,11 @@ const appRoutes: Routes = [
   {
     path: 'success',
     component: SuccessComponent,
+    data: { title: 'Admin' }
+  },
+  {
+    path: 'success-event',
+    component: SuccessEventComponent,
     data: { title: 'Admin' }
   },
   {
@@ -201,7 +207,8 @@ const appRoutes: Routes = [
     UserEventComponent,
     UserDestComponent,
     DeleteComponent,
-    NavigatorComponent
+    NavigatorComponent,
+    SuccessEventComponent
   ],
   imports: [
     BrowserModule,

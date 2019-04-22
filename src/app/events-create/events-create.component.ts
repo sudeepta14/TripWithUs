@@ -21,7 +21,7 @@ export class EventsCreateComponent implements OnInit {
     this.http.post('/eve', this.book)
       .subscribe(res => {
           let id = res['_id'];
-          this.router.navigate(['success']);
+          this.router.navigate(['success-event']);
         }, (err) => {
           console.log(err);
         }
