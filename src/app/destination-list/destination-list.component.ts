@@ -26,12 +26,12 @@ export class DestinationListComponent implements OnInit {
 
   logout() {
     localStorage.removeItem('jwtToken');
-    this.router.navigate(['login']);
+    this.router.navigate(['dests']);
   }
   deleteBook(id) {
     this.http.delete('/book/' +id)
       .subscribe(res => {
-        this.router.navigate(['login']);
+        this.router.navigate(['dests']);
         }, (err) => {
           console.log(err);
         }
