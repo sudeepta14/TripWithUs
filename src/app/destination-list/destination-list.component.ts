@@ -31,7 +31,7 @@ export class DestinationListComponent implements OnInit {
   deleteBook(id) {
     this.http.delete('/book/' +id)
       .subscribe(res => {
-          this.router.navigate(['/dests']);
+        this.router.navigate(['login']);
         }, (err) => {
           console.log(err);
         }
