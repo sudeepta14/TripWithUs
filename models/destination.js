@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var BookSchema = new Schema({
+var DestSchema = new Schema({
   city: {
     type: String,
     required: true
@@ -20,4 +20,4 @@ var BookSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model('destination', BookSchema);
+module.exports = mongoose.model('destination', DestSchema);
