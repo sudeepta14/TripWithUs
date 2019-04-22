@@ -1,74 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TripWithUs!</title>
+  <title>TripWithUs1!</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
 
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <!-- <img src="/assets/images/shee.png" alt=""> -->
-                    <p><img src="/assets/images/shee.png" alt="Smiley face" > TripWithUs!</p>
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand"><img src="/assets/images/sheero.png" alt="sheero_logo" class="sheero"></a>
+        <span class="navbar-text mx-auto">TripWithUs!</span>
 
-                    <!-- <a class="navbar-brand" href="#">
-                        <img src="http://placehold.it/150x50&amp;text=Logo" alt="">
-                    </a> -->
-                    <ul>
-                    <!-- <input type="button" class = "btn" >< &nbsp; -->
+        <button class="navbar-toggler ml-auto navbar-light bg-light" data-toggle="collapse" data-target="#collapse_target">
 
-                    <!-- <li><input type="button" value = "TripWithUs!" class = "title" style="color:maroon;" ></li> &nbsp; -->
-                    <!-- <li class="nav-link" >TripWithUs!</li> -->
-                  </ul>
+            <span class="navbar-toggler-icon"></span>
 
-                <!-- <a  href="#">
-                    <img src="http://placehold.it/150x50&amp;text=Logo" alt="">
-                </a> -->
-                <ul class="nav navbar-nav navbar-right main-navigation mobile-navigation">
-                    <!-- <li>
-                        <a class="nav-link" routerLink="our-story">About Us</a>
-                    </li> -->
+        </button>
 
-                    <li>
-                        <a class="nav-link" routerLink="">Home</a>
+        <div class="collapse navbar-collapse" id="collapse_target">
+        <ul class="navbar-nav ml-auto">
 
-                    </li>
-                    <li>
-                        <a class="nav-link" routerLink="aboutus">About Us</a>
-                    </li>
-                    <li>
-                        <a class="nav-link"  routerLink="signup">Sign Up</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" routerLink="login">Login</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            <li class="nav-item">
+                <a class="nav-link" routerLink="">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="aboutus">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="signup">Sign Up</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="">Logout</a>
+            </li>
+
+        </ul>
         </div>
-        <!-- /.container -->
     </nav>
 
 <div class="pimg1">
@@ -87,9 +63,9 @@
 
 <section class="section section-dark">
 
-    <h2> You dream it - we make it ! </h2>
+    <h1 style="padding-bottom:5%;"> You dream it - we make it ! </h1>
           <div id="portfolio">
-              <div class="container content">
+              <div class="container">
 
                       <p class="content-para">
                           Hello, we’re TripWithUs! your premium travel planning service. We know you’re always busy.
@@ -97,21 +73,42 @@
                         So let us take care of that, we’re really good at it, we promise!
                       </p>
 
+                      <div class="container square-grid">
+                          <div class="card-deck mb-5 mt-5">
+                              <div class="card" style="color: #555;">
+                                  <div class="card-body">
+                                  <img src="/assets/images/customer.jpg" style="width:300px;height:300px;" alt="Customer Support picture" class="img-fluid"/>
+                                  <h4 class="card-title mt-2">Customer Support</h4>
+                                  <h6 class="card-subtitle">For you 24 &times;7</h6>
+                                  </div>
+                              </div>
+                              <div class="card" style="color: #555;">
+                                  <div class="card-body">
+                                  <img src="/assets/images/checkout.png" style="width:300px;height:300px;" alt="Easy checkout picture" class="img-fluid"/>
+                                  <h4 class="card-title mt-2">Easy Checkout</h4>
+                                  <h6 class="card-subtitle">Hassle Free, Always</h6>
+                                  </div>
+                              </div>
+                              <div class="card" style="color: #555;">
+                                  <div class="card-body">
+                                  <img src="/assets/images/recommendation.png" style="width:300px;height:300px;" alt="expert recommedation picture" class="img-fluid"/>
+                                  <h4 class="card-title mt-2">Expert Recommendation</h4>
+                                  <h6 class="card-subtitle">Anything and Everything</h6>
+                                  </div>
+                              </div>
+                              <div class="card" style="color: #555;">
+                                  <div class="card-body">
+                                  <img src="/assets/images/simple_search.png" style="width:300px;height:300px;" alt="simple search picture" class="img-fluid"/>
+                                  <h4 class="card-title mt-2">Simply Search!</h4>
+                                  <h6 class="card-subtitle">Intuitive and Easy</h6>
+                                  </div>
+                              </div>
+                              </div>
 
-                <div class="categories">
-                  <ul class="cat">
-                    <!-- <li>
-                      <ol class="type">
-                        <li><a href="#" data-filter="*" class="active">All</a></li>
-                        <li><a href="#" data-filter=".web">Web Design</a></li>
-                        <li><a href="#" data-filter=".photography">Photography</a></li>
-                        <li><a href="#" data-filter=".product">Product Design</a></li>
-                      </ol>
-                    </li> -->
 
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
+                      </div>
+
+                <!--
                 <div class="row">
                   <div class="portfolio-items">
                     <div class="col-sm-6 col-md-3 col-lg-3 web">
@@ -154,7 +151,7 @@
 
 
                   </div>
-                </div>
+                </div>-->
               </div>
             </div>
 
@@ -163,84 +160,91 @@
 
 <div class="pimg2">
 	<div class="ptext">
-	<span class="border trans">
-      <h2> Life's an adventure &mdash; Paddle hard !</h2>
-	</span>
+
+    <span>
+      <h2 style="color:white;"> Life's an adventure &mdash; Paddle hard !</h2>
+    </span>
+
 	</div>
 </div>
 
 
+
 <section class="section section-dark">
-    <h2> Interesting Destinations </h2>
+    <h1 style="padding-bottom:5%;"> Interesting Destinations </h1>
 
     <div id="portfolio">
-        <div class="container content">
+        <div class="container">
             <p class="content-para">
-                Explore best places to go Kayaking around the U.S. with us! Ranging from Prince William Sound
+                Explore best places around the U.S. with us! Ranging from Prince William Sound
                 located in the heart of Chugach National forest in Alaska to Congress Avenue in the downtown
-                Austin, Texas.  For each of these locations we provide you with the information you care about.
-                Also, we are not limited to kayaking alone!
+                Austin, Texas.  For each of these locations we provide you with the information you care about!
                 </p>
-          <div class="categories">
-            <ul class="cat">
-              <!-- <li>
-                <ol class="type">
-                  <li><a href="#" data-filter="*" class="active">All</a></li>
-                  <li><a href="#" data-filter=".web">Web Design</a></li>
-                  <li><a href="#" data-filter=".photography">Photography</a></li>
-                  <li><a href="#" data-filter=".product">Product Design</a></li>
-                </ol>
-              </li> -->
-            </ul>
-            <div class="clearfix"></div>
-          </div>
-          <div class="row">
-            <div class="portfolio-items">
-              <div class="col-sm-6 col-md-3 col-lg-3 web">
-                <div class="portfolio-item">
-                  <div class="hover-bg nohover"> <a href="/assets/images/nyclarge.jpg" title="New York City" data-lightbox-gallery="gallery1">
-                    <div class="hover-text">
-                      <h4>New York City</h4>
-                    </div>
-                    <img src="/assets/images/nycsmall.jpg" class="img-responsive" alt="Project Title"> </a>
-                    </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 col-lg-3 product">
-                <div class="portfolio-item">
-                  <div class="hover-bg nohover"> <a href="02/assets/images/washingtonlarge.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                    <div class="hover-text">
-                      <h4>Grand Canyon</h4>
-                    </div>
-                    <img src="/assets/images/washingtonsmall.jpg" class="img-responsive" alt="Project Title"> </a>
-                    </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 col-lg-3 web">
-                <div class="portfolio-item">
-                  <div class="hover-bg nohover"> <a href="/assets/images/disneylarge.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                    <div class="hover-text">
-                      <h4>Disney World</h4>
-                    </div>
-                    <img src="/assets/images/disneysmall.jpg" class="img-responsive" alt="Project Title"> </a>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-md-3 col-lg-3 photography">
-                <div class="portfolio-item">
-                  <div class="hover-bg nohover"> <a href="/assets/images/lasvegaslarge.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                    <div class="hover-text">
-                      <h4>Las Vegas</h4>
-                    </div>
-                    <img src="/assets/images/lasvegassmall.jpg" class="img-responsive" alt="Project Title"> </a>
-                    </div>
-                </div>
-              </div>
 
 
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- slideshow -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="/assets/images/dest_Boston.png" alt="Boston">
+                  <div class="carousel-caption">
+                      <h3>Boston</h3>
+                      <p>City in Massachusetts</p>
+                      <a href="#" style="color: white;font-weight: bold; font-size: 1.5em;">See here</a>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/dest_chicago.png" alt="Chicago">
+                  <div class="carousel-caption">
+                      <h3>Chicago</h3>
+                      <p>City in Illinois</p>
+                      <a href="#" style="color: white;font-weight: bold; font-size: 1.5em;">See here</a>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/Dest_goldengate.png" alt="San Francisco">
+                  <div class="carousel-caption">
+                      <h3>San Francisco</h3>
+                      <p>City in California</p>
+                      <a href="#" style="color: white;font-weight: bold; font-size: 1.5em;">See here</a>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/dest_miami.png" alt="Miami image">
+                  <div class="carousel-caption">
+                      <h3>Miami</h3>
+                      <p>City in Florida</p>
+                      <a href="#" style="color: white;font-weight: bold; font-size: 1.5em;">See here</a>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/dest_neworleans.png" alt="New Orleans image">
+                  <div class="carousel-caption">
+                      <h3>New Orleans</h3>
+                      <p>City in Lousiana</p>
+                      <a href="#" style="color: white;font-weight: bold; font-size: 1.5em;">See here</a>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="/assets/images/dest_washington_dc.png" alt="Washington DC image">
+                  <div class="carousel-caption">
+                      <h3>Washington D.C.</h3>
+                      <p>District of Columbia</p>
+                      <a href="#" style="color: white;font-weight: bold; font-size: 1.5em;">See here</a>
+                  </div>
+              </div>
             </div>
+            <!-- Left and right controls -->
+         <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
           </div>
+          <p class="explore-para">
+            Explore more places <a [routerLink]="['/destinations']"><em>here</em></a>
+           </p>
         </div>
       </div>
 
@@ -256,70 +260,62 @@
 
 
 <section class="section section-dark">
-    <h2>It's more than just music !</h2>
+    <h1 style="padding-bottom:5%;">It's more than just music !</h1>
 
     <div id="portfolio">
-        <div class="container content">
+        <div class="container">
             <p class="content-para">
                 Explore our expert recommendations on nearby live events, festivals, tours, and music concerts around the U.S. with us! Get promo codes, best deals and discounts! After all, what completes your trip but a gala time at a fun event with family and friends!
                 </p>
-          <div class="categories">
-            <ul class="cat">
-              <!-- <li>
-                <ol class="type">
-                  <li><a href="#" data-filter="*" class="active">All</a></li>
-                  <li><a href="#" data-filter=".web">Web Design</a></li>
-                  <li><a href="#" data-filter=".photography">Photography</a></li>
-                  <li><a href="#" data-filter=".product">Product Design</a></li>
-                </ol>
-              </li> -->
-            </ul>
-            <div class="clearfix"></div>
-          </div>
-          <div class="row">
-            <div class="portfolio-items">
-              <div class="col-sm-6 col-md-3 col-lg-3 web">
-                <div class="portfolio-item">
-                  <div class="hover-bg nohover"> <a href="/assets/images/nyclarge.jpg" title="New York City" data-lightbox-gallery="gallery1">
-                    <div class="hover-text">
-                      <h4>New York City</h4>
-                    </div>
-                    <img src="/assets/images/nycsmall.jpg" class="img-responsive" alt="Project Title"> </a>
-                    </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 col-lg-3 product">
-                <div class="portfolio-item">
-                  <div class="hover-bg nohover"> <a href="02/assets/images/washingtonlarge.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                    <div class="hover-text">
-                      <h4>Grand Canyon</h4>
-                    </div>
-                    <img src="/assets/images/washingtonsmall.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 col-lg-3 web">
-                <div class="portfolio-item">
-                  <div class="hover-bg nohover"> <a href="/assets/images/disneylarge.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                    <div class="hover-text">
-                      <h4>Disney World</h4>
-                    </div>
-                    <img src="/assets/images/disneysmall.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                </div>
-              </div>
 
-              <div class="col-sm-6 col-md-3 col-lg-3 photography">
-                <div class="portfolio-item">
-                  <div class="hover-bg nohover"> <a href="/assets/images/lasvegaslarge.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                    <div class="hover-text">
-                      <h4>Las Vegas</h4>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- slideshow -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="/assets/images/events_jazzshow.png" alt="Jazz Events">
+                        <div class="carousel-caption">
+                            <h3>Jazz Show</h3>
+                            <p>Festivals and Events</p>
+                            <a href="#" style="color: white;font-weight: bold; font-size: 1.5em;">See here</a>
+                        </div>
                     </div>
-                    <img src="/assets/images/lasvegassmall.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    <div class="item">
+                      <img src="/assets/images/events_operashow.png" alt="Opera Show">
+                        <div class="carousel-caption">
+                            <h3>Opera Show</h3>
+                            <p>Explore the classic operas</p>
+                            <a href="#" style="color: white;font-weight: bold; font-size: 1.5em;">See here</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                      <img src="/assets/images/events_palmsprings.png" alt="Palm Springs">
+                        <div class="carousel-caption">
+                            <h3>Palm Springs Festivals</h3>
+                            <p>Film Festivals in California</p>
+                            <a href="#" style="color: white;font-weight: bold; font-size: 1.5em;">See here</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                      <img src="/assets/images/events_zilkerKite.png" alt="Kite Events">
+                        <div class="carousel-caption">
+                            <h3>Kite Festival</h3>
+                            <p>Kite events in Austin</p>
+                            <a href="#" style="color: white;font-weight: bold; font-size: 1.5em;">See here</a>
+                        </div>
+                    </div>
+
+                  </div>
+                  <!-- Left and right controls -->
+               <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
                 </div>
-              </div>
-
-
-            </div>
-          </div>
+                <p class="explore-para">
+                  Explore more events <a [routerLink]="['/eventList']"><em>here</em></a>
+                 </p>
         </div>
       </div>
 
@@ -340,14 +336,18 @@
 <a href="https://plus.google.com/?pli=1" target="_blank"><i class="fa fa-google" style="font-size:40px;color:white"></i></a>
 <a href="https://www.facebook.com/groups/265746840999847/" target="_blank"><i class="fa fa-facebook" style="font-size:40px;color:white"></i></a>
 
-<div class="row">
-    <p>
-        Copyright &copy; 2019 by TripWithUs! Developed by Team# 05. All rights reserved.
+
+    <p class="footer-part">
+        Copyright &copy; 2019 by TripWithUs! Developed by Team# 05. <br /> All rights reserved.
     </p>
-</div>
+
 
 </section>
 
+<!--Bootstrap4 JS files -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 

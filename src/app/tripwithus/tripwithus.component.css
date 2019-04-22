@@ -9,9 +9,35 @@ body , html {
 	color: #666;
 
 }
-.navbar-fixed-top .nav {
-  padding: 23px 0;
+
+/*************** navigation style ***********************/
+.nav-link {
+  font-size: 2em;
+  font-family: 'Lato', 'sans-serif';
+  cursor: pointer;
+  margin-left: 25px;
+  color: #fff;
 }
+
+nav .navbar-nav li {
+  margin-left: 25px;
+  }
+
+nav .navbar-nav li a{
+color: #fff !important;
+}
+
+.navbar .navbar-text {
+  color: white!important;
+  font-weight: bold;
+  font-size: 2.4em;
+}
+
+.sheero {
+  height: 60px;
+  width: auto;
+}
+
 
 
 .title{
@@ -26,17 +52,10 @@ body , html {
   width: 100px;
 }
 
-.btn{
-  background-image: url(sheero.png);background-size:100% 100%;
-  background-color: transparent;
-
-  border: 2px solid  maroon;
-  height: 60px;
-  width: 60px;
-}
 
  .content-para {
-        font-size: 1.5em;
+				font-size: 1.8em;
+				line-height: 1.4em;
         word-spacing: 3px;
         text-align: left;
     }
@@ -51,33 +70,21 @@ body , html {
 
 
 
-@media(min-width:768px) {
-  body {
-      padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
-  }
-
-  /* .navbar-fixed-top .navbar-brand {
-    background-color:  	#708090;
-      padding: 15px 0;
-  } */
-}
 
 .pimg1,.pimg2,.pimg3{
 	position: relative;
-	/* opacity: 0.70; */
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	max-width: 100%;
 }
 
 .pimg1{
 	background-image: url('newyork.jpg');
 	min-height: 600px;
 }
-/* .nav-nav navbar-nav{
-color: red;
-} */
+
 .pimg2{
 	background-image: url('niagara.jpg');
 	min-height: 400px;
@@ -88,10 +95,7 @@ color: red;
 	min-height: 400px;
 }
 
-.nav-link li a{
-    font-size: 160%;
 
-}
 .section{
 	text-align: center;
 	padding: 50px 80px;
@@ -113,12 +117,11 @@ color: red;
     padding: 10px;
 }
 
-.main-navigation li {
-    font-size: 1.4em;
-    font-family: 'Lato', 'sans-serif';
-    cursor: pointer;
-    margin-left: 20px;
+.footer-part {
+	text-align: center;
+	font-size: 1.2em;
 }
+
 
 .ptext{
 	position: absolute;
@@ -127,9 +130,10 @@ color: red;
 	text-align: center;
 	color: #000;
 	font-size: 27px;
-	letter-spacing: 8px;
+	letter-spacing: 5px;
 	text-transform: uppercase;
 }
+
 
 .ptext .border{
 	background : #111;
@@ -137,10 +141,7 @@ color: red;
 	padding: 20px;
 }
 
-.ptext .border.trans{
-	background-color: transparent;
 
-}
 .fa {
   padding: 40px;
   font-size: 15px;
@@ -155,7 +156,12 @@ color: red;
     opacity: 0.7;
 }
 
-
+.explore-para{
+	text-align: center;
+	padding-top: 5%;
+	font-size: 1.5em;
+	font-weight: bold;
+}
 
 
 
@@ -604,13 +610,33 @@ padding: 40px;
 	    -ms-transform: translateZ(0);
 	        transform: translateZ(0);
 }
+/************* Carousel destinations ***********/
+.carousel-inner img {
+  margin: auto;
+}
+.carousel-inner {
+	padding-top: 5%;
+}
 
+.square-grid h4{
+	color: #555;
+}
 
 /***************************** Media Queries ***********************************************/
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
+	.section{
+		text-align: center;
+		padding: 50px 5px;
+	}
 
+	.explore-para{
+		text-align: center;
+		padding-top: 10%;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
 
 .pimg1 .ptext .border {
     display: block;
@@ -619,9 +645,6 @@ padding: 40px;
     word-spacing: 2px;
     vertical-align: middle;
 }
-
-
-
 
 .pimg3 .ptext .border {
     display: block;
@@ -652,8 +675,6 @@ padding: 40px;
 
 }
 
-
-
 .section-dark h2 {
 	line-height: 160%;
     padding-bottom: 5px;
@@ -661,25 +682,21 @@ padding: 40px;
 
 }
 
+
+
 #portfolio {
-        padding: 10px 10px;
-
-
-    }
-    .navbar-fixed-top .navbar-brand {
-      padding: 0 15px;
-  }
-    .content-para {
-        font-size: 1.5em;
-        word-spacing: 3px;
-        padding: 10px 0px 0px;
-        text-align: left;
+				padding: 10px 10px;
     }
 
+		.content-para{
+		font-size: 1.8em;
+    line-height: 1.4em;
+    word-spacing: 3px;
+    padding: 10px 0px 0px;
+    text-align: left;
+	}
 .hover-bg .hover-text {
-
     display: none;
-
 }
 
 .btn {
@@ -690,25 +707,22 @@ padding: 40px;
         display: none;
     }
 
-    .mobile-navigation {
-        margin-top: -10px;
-    }
+		nav .navbar-nav li {
+			padding-top: 2%;
+			}
 
-    .mobile-navigation li {
-        padding-bottom: 3%;
-        font-size: 1.3em;
-        font-family: 'Lato', 'sans-serif';
+		.sheero {
+				height: 45px;
+				width: auto;
+			}
 
+/************* Carousel destinations ***********/
+.carousel-inner img {
+  max-width: 100%;
 }
-.navbar-fixed-top .navbar-brand {
-  padding: 2px 0;
+
+.carousel-inner {
+	padding-top: 3%;
 }
-
-    /* .navbar-toggle {
-    margin-right: 35px;
-} */
-
-
-
 
 }
