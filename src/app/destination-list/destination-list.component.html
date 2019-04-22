@@ -74,7 +74,7 @@
               <td>{{ book.isbn }}</td>
               <td>{{ book.title }}</td>
               <td>{{ book.author }}</td>
-              <td><a [routerLink]="['/book-details', book._id]">Show Detail</a></td>
+              <td><button class="btn btn-danger" type="button" (click)="deleteBook(book._id)">DELETE</button></td>
             </tr>
           </tbody>
         </table>

@@ -24,10 +24,18 @@ export class DestinationListComponent implements OnInit {
     });
   }
 
-
   logout() {
     localStorage.removeItem('jwtToken');
     this.router.navigate(['login']);
+  }
+  deleteBook(id) {
+    this.http.delete('/book/' +id)
+      .subscribe(res => {
+          this.router.navigate(['/books']);
+        }, (err) => {
+          console.log(err);
+        }
+      );
   }
 
 }
