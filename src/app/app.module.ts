@@ -77,11 +77,7 @@ const appRoutes: Routes = [
     data: { title: 'Sign Up' }
   },
 
-  {
-    path: 'signup/signup',
-    component: SignupComponent,
-    data: { title: 'Sign Up' }
-  },
+
 
   {
     path: 'signup/login',
