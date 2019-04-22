@@ -30,6 +30,7 @@ import { EventsDetailComponent } from './events-detail/events-detail.component';
 import { EventsEditComponent } from './events-edit/events-edit.component';
 import { SuccessComponent } from './success/success.component';
 import { UserEventComponent } from './user-event/user-event.component';
+import { UserDestComponent } from './user-dest/user-dest.component';
 
 const appRoutes: Routes = [
   {
@@ -78,8 +79,12 @@ const appRoutes: Routes = [
   component: SampleComponent,
     pathMatch: 'full'
   },
-  { path: 'destinations',
+  { path: 'eventList',
   component: UserEventComponent,
+  data: { title: 'Destination List Details' }
+  },
+  { path: 'destinations',
+  component: UserDestComponent,
   data: { title: 'Destination List Details' }
   }
 
@@ -111,7 +116,8 @@ const appRoutes: Routes = [
     EventsEditComponent,
     SuccessComponent,
     DestinationListComponent,
-    UserEventComponent
+    UserEventComponent,
+    UserDestComponent
   ],
   imports: [
     BrowserModule,
