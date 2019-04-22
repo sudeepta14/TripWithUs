@@ -48,7 +48,7 @@ background-image: url('http://getwallpapers.com/wallpaper/full/2/8/1/137884.jpg'
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
-font-family: 'Lato', sans-serif;
+font-family: 'Lato', sans-serif; /* Lato sans-serif font for better readability*/
 }
 
 .container {
@@ -109,3 +109,9 @@ color: whitesmoke;
 text-decoration: none;
 margin-left: 15px;
 }
+
+.signup-message {
+  color:red;
+  text-align: center;
+}
+

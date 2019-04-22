@@ -10,10 +10,12 @@ import { of } from 'rxjs/observable/of';
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
+
+
 export class SignupComponent implements OnInit {
 
-  signupData = { username:'', password:'' };
-  message = '';
+  signupData = { username:'', password:'', email:'' };
+  message = ''; /* Message to be printed on the Sign Up component*/
 
   constructor(private http: HttpClient, private router: Router) { }
 
@@ -22,9 +24,16 @@ export class SignupComponent implements OnInit {
 
   signup() {
     this.http.post('/api/signup',this.signupData).subscribe(resp => {
-      console.log(resp);
+      console.log('** The response for API SignUp Post call is :  ** '+resp);
+      /*
+      if(resp.body.success===false){
+        alert("This email address is already taken. Please Enter a valid email address")
+      } */
+
+      // if(resp.body.)
       this.router.navigate(['login']);
     }, err => {
+
       this.message = err.error.msg;
     });
   }
@@ -36,6 +45,7 @@ export class SignupComponent implements OnInit {
       return of(result as T);
     };
   }
+
   logout() {
     this.router.navigate(['']);
   }

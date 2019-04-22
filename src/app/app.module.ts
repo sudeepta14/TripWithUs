@@ -1,3 +1,4 @@
+import { NavigatorComponent } from './navbar/navbar.component';
 
 import { EventsCreateComponent } from './events-create/events-create.component';
 import { DestinationListComponent } from './destination-list/destination-list.component';
@@ -133,6 +134,10 @@ const appRoutes: Routes = [
   { path: 'destinations',
   component: UserDestComponent,
   data: { title: 'Destination List Details' }
+  },
+  {
+    path: 'navbar',
+    component: NavigatorComponent
   }
 
 ];
@@ -165,7 +170,9 @@ const appRoutes: Routes = [
     DestinationListComponent,
     UserEventComponent,
     UserDestComponent,
-    DeleteComponent
+    DeleteComponent,
+    NavigatorComponent
+
   ],
   imports: [
     BrowserModule,
