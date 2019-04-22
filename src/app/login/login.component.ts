@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
       if(this.loginData.email === "admin@tripwithus.com" && this.loginData.password === "admin"){
          this.router.navigate(['event-admin'])
       }else{
-        this.router.navigate(['event2']);
+        this.router.navigate(['aboutus']);
       // this.router.navigate(['navbar']);
       }
 
