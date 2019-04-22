@@ -78,6 +78,10 @@ const appRoutes: Routes = [
   { path: '',
   component: SampleComponent,
     pathMatch: 'full'
+  },
+  { path: 'destinations',
+  component: DestinationListComponent,
+  data: { title: 'Destination List Details' }
   }
 
 ];
@@ -106,7 +110,8 @@ const appRoutes: Routes = [
     EventsCreateComponent,
     EventsDetailComponent,
     EventsEditComponent,
-    SuccessComponent
+    SuccessComponent,
+    DestinationListComponent
   ],
   imports: [
     BrowserModule,
