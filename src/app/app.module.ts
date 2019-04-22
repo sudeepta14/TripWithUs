@@ -31,6 +31,7 @@ import { EventsEditComponent } from './events-edit/events-edit.component';
 import { SuccessComponent } from './success/success.component';
 import { UserEventComponent } from './user-event/user-event.component';
 import { UserDestComponent } from './user-dest/user-dest.component';
+import { DeleteComponent } from './delete/delete.component';
 
 const appRoutes: Routes = [
   {
@@ -46,6 +47,16 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent,
+    data: { title: 'Admin' }
+  },
+  {
+    path: 'success',
+    component: SuccessComponent,
+    data: { title: 'Admin' }
+  },
+  {
+    path: 'delete',
+    component: DeleteComponent,
     data: { title: 'Admin' }
   },
   {
@@ -149,7 +160,8 @@ const appRoutes: Routes = [
     SuccessComponent,
     DestinationListComponent,
     UserEventComponent,
-    UserDestComponent
+    UserDestComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
