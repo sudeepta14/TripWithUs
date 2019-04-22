@@ -98,6 +98,18 @@ const appRoutes: Routes = [
   component: UserEventComponent,
   data: { title: 'Destination List Details' }
   },
+  { path: 'eventList/aboutus',
+  component: AboutUsComponent,
+  data: { title: 'Destination List Details' }
+  },
+  { path: 'eventList/signup',
+  component: SignupComponent,
+  data: { title: 'Destination List Details' }
+  },
+  { path: 'eventList/login',
+  component: LoginComponent,
+  data: { title: 'Destination List Details' }
+  },
   { path: 'destinations',
   component: UserDestComponent,
   data: { title: 'Destination List Details' }
