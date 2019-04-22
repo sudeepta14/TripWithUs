@@ -18,7 +18,7 @@ export class UserEventComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
-    this.http.get('/book').subscribe(data => {
+    this.http.get('/eve').subscribe(data => {
       console.log(data);
       this.books = data;
     });
