@@ -155,6 +155,28 @@ iframe {
   border-radius: 0px;
 }
 
+.nav-link {
+  font-size: 1.4em;
+  font-family: 'Lato', 'sans-serif';
+  cursor: pointer;
+  margin-left: 35px;
+  /*color: #555454; */
+}
+
+nav .navbar-nav li a{
+color: #000 !important;
+}
+
+.navbar .navbar-text {
+  color: black!important;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.sheero {
+  height: 60px;
+  width: auto;
+}
 
 /*==================================================================
 [ Form ]*/
