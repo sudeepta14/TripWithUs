@@ -146,7 +146,7 @@ iframe {
   align-items: center;
   padding: 30px;
   position: relative;
-  background-color: #ffda0a;
+  /* background-color: #ffda0a; */
 }
 
 .wrap-login100 {
