@@ -27,14 +27,5 @@ export class BookCreateComponent implements OnInit {
         }
       );
   }
-  deleteBook(id) {
-    this.http.delete('/dest/'+id)
-      .subscribe(res => {
-          this.router.navigate(['/books']);
-        }, (err) => {
-          console.log(err);
-        }
-      );
-  }
 
 }

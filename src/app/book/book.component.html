@@ -101,17 +101,17 @@
       <table class="table">
         <thead>
           <tr>
-            <th>Destination Name</th>
-            <th>Destination Location</th>
+            <th>Destination City</th>
+            <th>Destination Activity</th>
             <th>Destination Budget</th>
             <th>Destination Best Time To Visit</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let book of books">
-            <td>{{ book.isbn }}</td>
-            <td>{{ book.title }}</td>
-            <td>{{ book.author }}</td>
+            <td>{{ book.city }}</td>
+            <td>{{ book.activity }}</td>
+            <td>{{ book.budget }}</td>
             <td>{{ book.publisher }}</td>
             <td><button class="btn btn-danger" type="button" (click)="deleteBook(book._id)">DELETE</button></td>
           </tr>
