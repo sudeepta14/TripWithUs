@@ -88,7 +88,7 @@ const appRoutes: Routes = [
   component: UserEventComponent,
   data: { title: 'Destination List Details' }
   },
-  { path: '/',
+  { path: '',
   component: UserDestComponent,
   data: { title: 'Destination List Details' }
   }
