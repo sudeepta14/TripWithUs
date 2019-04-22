@@ -9,7 +9,7 @@ var router = express.Router();
 
 var User = require("../models/User");
 
-var Event = require("../models/Event");
+
 
 var flag=false;
 
@@ -67,44 +67,44 @@ router.post('/signin', function(req, res) {
   });
 });
 
-// API to fetch Events from database
+// // API to fetch Events from database
 
-router.get('/event', passport.authenticate('jwt', { session: false}), function(req, res) {
-  var token = getToken(req.headers);
-  if (token) {
-    Event.find(function (err, events) {
-      if (err) return next(err);
-      res.json(events);
-    });
-  } else {
-    return res.status(403).send({success: false, msg: 'Unauthorized.'});
-  }
-});
+// router.get('/event', passport.authenticate('jwt', { session: false}), function(req, res) {
+//   var token = getToken(req.headers);
+//   if (token) {
+//     Event.find(function (err, events) {
+//       if (err) return next(err);
+//       res.json(events);
+//     });
+//   } else {
+//     return res.status(403).send({success: false, msg: 'Unauthorized.'});
+//   }
+// });
 
-// API to add Events to the database
+// // API to add Events to the database
 
-router.post('/event', passport.authenticate('jwt', { session: false}), function(req, res) {
-  var token = getToken(req.headers);
-  if (token) {
-    console.log(req.body);
-    var newEvent = new Event({
-      eventId: req.body.eventId,
-      eventName: req.body.eventName,
-      eventLocation: req.body.eventLocation,
-      zipcode: req.body.eventDate,
-      eventDescription:req.body.eventDescription
-    });
+// router.post('/event', passport.authenticate('jwt', { session: false}), function(req, res) {
+//   var token = getToken(req.headers);
+//   if (token) {
+//     console.log(req.body);
+//     var newEvent = new Event({
+//       eventId: req.body.eventId,
+//       eventName: req.body.eventName,
+//       eventLocation: req.body.eventLocation,
+//       zipcode: req.body.eventDate,
+//       eventDescription:req.body.eventDescription
+//     });
 
-    newEvent.save(function(err) {
-      if (err) {
-        return res.json({success: false, msg: 'Event Creation Failed.'});
-      }
-      res.json({success: true, msg: 'Successful created new event.'});
-    });
-  } else {
-    return res.status(403).send({success: false, msg: 'Unauthorized.'});
-  }
-});
+//     newEvent.save(function(err) {
+//       if (err) {
+//         return res.json({success: false, msg: 'Event Creation Failed.'});
+//       }
+//       res.json({success: true, msg: 'Successful created new event.'});
+//     });
+//   } else {
+//     return res.status(403).send({success: false, msg: 'Unauthorized.'});
+//   }
+// });
 
 
 getToken = function (headers) {
