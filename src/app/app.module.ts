@@ -107,7 +107,7 @@ const appRoutes: Routes = [
   { path: 'our-story', component: MainPageComponent },
       { path: 'when-where', component: WhenWhereComponent },
   { path: '',
-  component: DeleteComponent,
+  component: SampleComponent,
     pathMatch: 'full'
   },
   { path: 'eventList',
