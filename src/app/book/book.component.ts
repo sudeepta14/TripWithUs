@@ -17,7 +17,7 @@ export class BookComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('/dest').subscribe(data => {
+    this.http.get('/book').subscribe(data => {
       console.log(data);
       this.books = data;
     });
