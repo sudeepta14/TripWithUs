@@ -118,6 +118,10 @@ const appRoutes: Routes = [
   component: AboutUsComponent,
   data: { title: 'Destination List Details' }
   },
+  { path: 'aboutus/login',
+  component: LoginComponent,
+  data: { title: 'Destination List Details' }
+  },
   { path: 'eventList/signup',
   component: SignupComponent,
   data: { title: 'Destination List Details' }
