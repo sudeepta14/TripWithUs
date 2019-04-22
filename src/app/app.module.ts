@@ -29,6 +29,7 @@ import { EventComponent } from './events/events.component';
 import { EventsDetailComponent } from './events-detail/events-detail.component';
 import { EventsEditComponent } from './events-edit/events-edit.component';
 import { SuccessComponent } from './success/success.component';
+import { UserEventComponent } from './user-event/user-event.component';
 
 
 
@@ -80,7 +81,7 @@ const appRoutes: Routes = [
     pathMatch: 'full'
   },
   { path: 'destinations',
-  component: DestinationListComponent,
+  component: UserEventComponent,
   data: { title: 'Destination List Details' }
   }
 
@@ -111,7 +112,8 @@ const appRoutes: Routes = [
     EventsDetailComponent,
     EventsEditComponent,
     SuccessComponent,
-    DestinationListComponent
+    DestinationListComponent,
+    UserEventComponent
   ],
   imports: [
     BrowserModule,
