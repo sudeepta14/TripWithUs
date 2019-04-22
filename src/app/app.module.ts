@@ -50,7 +50,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'dests',
-    component: BookComponent,
+    component: DestinationComponent,
     data: { title: 'Admin' }
   },
   {
