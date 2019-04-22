@@ -1,5 +1,4 @@
 import { NavigatorComponent } from './navbar/navbar.component';
-
 import { EventsCreateComponent } from './events-create/events-create.component';
 import { DestinationListComponent } from './destination-list/destination-list.component';
 import { DestinationComponent } from './destination/destination.component';
@@ -70,7 +69,6 @@ const appRoutes: Routes = [
     component: SignupComponent,
     data: { title: 'Sign Up' }
   },
-
   {
     path: 'signup/aboutus',
     component: AboutUsComponent,
@@ -81,7 +79,6 @@ const appRoutes: Routes = [
     component: AboutUsComponent,
     data: { title: 'Sign Up' }
   },
-
   {
     path: 'login/signup',
     component: SignupComponent,
@@ -190,7 +187,6 @@ const appRoutes: Routes = [
     UserDestComponent,
     DeleteComponent,
     NavigatorComponent
-
   ],
   imports: [
     BrowserModule,
