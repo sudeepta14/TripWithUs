@@ -88,10 +88,10 @@ const appRoutes: Routes = [
   component: UserEventComponent,
   data: { title: 'Destination List Details' }
   },
-  // { path: '',
-  // component: UserDestComponent,
-  // data: { title: 'Destination List Details' }
-  // }
+  { path: 'destinations',
+  component: UserDestComponent,
+  data: { title: 'Destination List Details' }
+  }
 
 ];
 
