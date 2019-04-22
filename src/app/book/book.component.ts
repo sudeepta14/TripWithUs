@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Router } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { tap, catchError } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-book',
@@ -14,7 +14,7 @@ export class BookComponent implements OnInit {
 
   books: any;
 
-  constructor(private http: HttpClient, private router: Router) { }
+
 
   // ngOnInit() {
   //   let httpOptions = {
@@ -30,15 +30,22 @@ export class BookComponent implements OnInit {
   //   });
   // }
 
-
+  constructor(private router: Router, private route: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit() {
     this.http.get('/book').subscribe(data => {
       console.log(data);
       this.books = data;
     });
+    this.getBookDetail(this.route.snapshot.params['id']);
   }
 
+
+  getBookDetail(id) {
+    this.http.get('/book/'+id).subscribe(data => {
+      this.books = data;
+    });
+  }
 
   logout() {
     localStorage.removeItem('jwtToken');
