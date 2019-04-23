@@ -19,7 +19,7 @@ export class DeleteEventComponent implements OnInit {
   ngOnInit() {
   }
   logout() {
-    this.router.navigate(['dests1']);
+    this.router.navigate(['events']);
   }
 
 }
