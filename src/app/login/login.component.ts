@@ -10,6 +10,9 @@ import { of } from 'rxjs/observable/of';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
+// Login Component Type Script File
+
 export class LoginComponent implements OnInit {
 
   loginData = { email:'', password:'' };
@@ -23,10 +26,8 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log('Email : '+this.loginData.email);
-    console.log('Password : '+this.loginData.password);
 
-
+// Validation for admin pass
     this.http.post('/api/signin',this.loginData).subscribe(resp => {
       this.data = resp;
       localStorage.setItem('jwtToken', this.data.token);
@@ -34,7 +35,7 @@ export class LoginComponent implements OnInit {
          this.router.navigate(['adminpage'])
       }else{
         this.router.navigate(['userpage']);
-      // this.router.navigate(['navbar']);
+
       }
 
     }, err => {
