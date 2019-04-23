@@ -156,7 +156,7 @@ const appRoutes: Routes = [
     component: EventsEditComponent,
     data: { title: 'Edit Book' }
   },
-  { path: 'our-story', component: MainPageComponent },
+  { path: 'static-page', component: MainPageComponent },
       { path: 'when-where', component: WhenWhereComponent },
   { path: '',
   component: SampleComponent,
