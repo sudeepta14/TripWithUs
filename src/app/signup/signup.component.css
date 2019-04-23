@@ -1,52 +1,39 @@
-/* body {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #eee;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/*************** navigation style ***********************/
+.nav-link {
+  font-size: 2em;
+  font-family: 'Lato', 'sans-serif';
+  cursor: pointer;
+  margin-left: 25px;
+  color: #fff;
 }
 
-.form-signin {
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
+nav .navbar-nav li {
+  margin-left: 25px;
+  }
+
+nav .navbar-nav li a{
+color: #fff !important;
 }
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
+
+.navbar .navbar-text {
+  color: white!important;
+  font-weight: bold;
+  font-size: 2.4em;
 }
-.form-signin .checkbox {
-  font-weight: normal;
+
+.sheero {
+  height: 60px;
+  width: auto;
 }
-.form-signin .form-control {
-  position: relative;
-  height: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px;
-  font-size: 16px;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.form-signin p {
-  margin-top: 10px;
-} */
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 html,body {
-background-image: url('http://getwallpapers.com/wallpaper/full/2/8/1/137884.jpg');
+background-image: url('http://getwallpapers.com/wallpaper/full/2/8/1/137884.jpg'); /* Image is taken from Content Distribution Network (CDN) of wallpapers*/
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat; /* No repeat property enforced to avoid tiling in case of large screens*/
 height: 100%;
 font-family: 'Lato', sans-serif; /* Lato sans-serif font for better readability*/
 }
@@ -115,3 +102,12 @@ margin-left: 15px;
   text-align: center;
 }
 
+
+/*********************** media queries *************************/
+@media only screen and (max-width: 768px) {
+
+  .h-100 {
+    height: 50% !important;
+  }
+
+  }
