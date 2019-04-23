@@ -1,3 +1,4 @@
+import { DeleteEventComponent } from './deletevent/deletevent.component';
 import { SuccessEventComponent } from './success-event/success-event.component';
 import { NavigatorComponent } from './navbar/navbar.component';
 import { EventsCreateComponent } from './events-create/events-create.component';
@@ -93,6 +94,11 @@ const appRoutes: Routes = [
   {
     path: 'delete',
     component: DeleteComponent,
+    data: { title: 'Admin' }
+  },
+  {
+    path: 'deletevent',
+    component: DeleteEventComponent,
     data: { title: 'Admin' }
   },
   {

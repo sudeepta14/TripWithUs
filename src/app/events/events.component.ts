@@ -44,7 +44,7 @@ export class EventComponent implements OnInit {
   deleteBook(id) {
     this.http.delete('/eve/'+id)
       .subscribe(res => {
-          this.router.navigate(['/events']);
+          this.router.navigate(['/deletevent']);
         }, (err) => {
           console.log(err);
         }
