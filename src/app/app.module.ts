@@ -117,6 +117,11 @@ const appRoutes: Routes = [
     data: { title: 'Sign Up' }
   },
   {
+    path: 'static-page/aboutus',
+    component: AboutUsComponent,
+    data: { title: 'Sign Up' }
+  },
+  {
     path: 'login/aboutus',
     component: AboutUsComponent,
     data: { title: 'Sign Up' }
@@ -127,10 +132,21 @@ const appRoutes: Routes = [
     data: { title: 'Sign Up' }
   },
   {
+    path: 'static-page/signup',
+    component: SignupComponent,
+    data: { title: 'Sign Up' }
+  },
+  {
     path: 'signup/login',
     component: LoginComponent,
     data: { title: 'Sign Up' }
   },
+  {
+    path: 'static-page/login',
+    component: LoginComponent,
+    data: { title: 'Sign Up' }
+  },
+
 
   {
     path: 'userpage',
