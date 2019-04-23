@@ -7,8 +7,8 @@ import { of } from 'rxjs/observable/of';
 
 @Component({
   selector: 'app-book',
-  templateUrl: './book.component.html',
-  styleUrls: ['./book.component.css']
+  templateUrl: './destination-list.component.html',
+  styleUrls: ['./destination-list.component.css']
 })
 export class DestinationListComponent implements OnInit {
 
