@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-
+// Events Schema has four attributes Id , Name, Type, Location, Date, Image
 var EventSchema = new Schema({
   id: {
     type: String,

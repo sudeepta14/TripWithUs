@@ -1,3 +1,4 @@
+// User Schema has four attributes username , password, email
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var bcrypt = require('bcrypt-nodejs');
@@ -15,6 +16,7 @@ var UserSchema = new Schema({
     email: {
         type: String,
         trim: true,
+        // Validation for uniqueness for email id
         unique: 'Email already exists',
         match: [/.+\@.+\..+/, 'Please fill a valid email address'],
         required: 'Email is required'
@@ -25,7 +27,7 @@ var UserSchema = new Schema({
       },
       updated: Date
 });
-
+// Saving schema for users
 UserSchema.pre('save', function (next) {
     var user = this;
     if (this.isModified('password') || this.isNew) {
@@ -45,6 +47,8 @@ UserSchema.pre('save', function (next) {
         return next();
     }
 });
+
+// Comparing passwords for validation
 
 UserSchema.methods.comparePassword = function (passw, cb) {
     bcrypt.compare(passw, this.password, function (err, isMatch) {
