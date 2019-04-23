@@ -4,7 +4,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var DestS = require('../models/destination.js');
 
-/* GET ALL BOOKS */
+/* GET ALL Destination */
 router.get('/', function(req, res, next) {
   Dests.find(function (err, products) {
     if (err) return next(err);
@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
   });
 });
 
-/* GET SINGLE BOOK BY ID */
+/* GET SINGLE Destination BY ID */
 router.get('/:id', function(req, res, next) {
   Dests.findById(req.params.id, function (err, post) {
     if (err) return next(err);
@@ -20,7 +20,7 @@ router.get('/:id', function(req, res, next) {
   });
 });
 
-/* SAVE BOOK */
+/* SAVE Destination */
 router.post('/', function(req, res, next) {
   Dests.create(req.body, function (err, post) {
     if (err) return next(err);
@@ -28,7 +28,7 @@ router.post('/', function(req, res, next) {
   });
 });
 
-/* UPDATE BOOK */
+/* UPDATE Destination */
 router.put('/:id', function(req, res, next) {
   Dest.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
     if (err) return next(err);
@@ -36,7 +36,7 @@ router.put('/:id', function(req, res, next) {
   });
 });
 
-/* DELETE BOOK */
+/* DELETE Destination */
 router.delete('/:id', function(req, res, next) {
   Dest.findByIdAndRemove(req.params.id, req.body, function (err, post) {
     if (err) return next(err);

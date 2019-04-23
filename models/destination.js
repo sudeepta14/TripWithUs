@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-
+// Destination Schema has four attributes City , Activity, Budget, Image
 var DestSchema = new Schema({
   city: {
     type: String,
