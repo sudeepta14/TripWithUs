@@ -17,7 +17,7 @@ export class BookComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('/dest').subscribe(data => {
+    this.http.get('/book').subscribe(data => {
       console.log(data);
       this.books = data;
     });
@@ -26,7 +26,7 @@ export class BookComponent implements OnInit {
 
 
   getBookDetail(id) {
-    this.http.get('/dest/'+id).subscribe(data => {
+    this.http.get('/book/'+id).subscribe(data => {
       this.books = data;
     });
   }
@@ -36,7 +36,7 @@ export class BookComponent implements OnInit {
     this.router.navigate(['login']);
   }
   deleteBook(id) {
-    this.http.delete('/dest/'+id)
+    this.http.delete('/book/'+id)
       .subscribe(res => {
           this.router.navigate(['/books']);
         }, (err) => {

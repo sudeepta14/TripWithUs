@@ -18,7 +18,7 @@ export class BookCreateComponent implements OnInit {
   }
 
   saveBook() {
-    this.http.post('/dest', this.book)
+    this.http.post('/book', this.book)
       .subscribe(res => {
           let id = res['_id'];
           this.router.navigate(['success']);
