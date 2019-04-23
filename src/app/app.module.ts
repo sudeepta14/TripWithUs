@@ -229,7 +229,8 @@ const appRoutes: Routes = [
     UserDestComponent,
     DeleteComponent,
     NavigatorComponent,
-    SuccessEventComponent
+    SuccessEventComponent,
+    DeleteEventComponent
   ],
   imports: [
     BrowserModule,
