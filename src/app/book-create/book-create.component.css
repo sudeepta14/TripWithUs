@@ -169,7 +169,7 @@ textarea {
   font-size: 2em;
   word-spacing: 2%;             /* expressed in %age of body font size: target/context = 3em/1.5em = 2% */
   padding-bottom: 10%;          /* target/context = 9px/90px = 10% */
-  margin-left: 23.8958333333%; /* 768px is row width (context) ,so Target/Context = 183px/768px = 9.8958333333% */
+  margin-left: 9.8958333333%; /* 768px is row width (context) ,so Target/Context = 76px/768px = 9.8958333333% */
   width: auto;
   padding-top: 2%;             /* target/context = 1.8px/90px = 2% */
   letter-spacing: 1%;
