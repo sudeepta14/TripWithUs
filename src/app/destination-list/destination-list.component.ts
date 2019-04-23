@@ -18,7 +18,7 @@ export class DestinationListComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
-    this.http.get('/dest').subscribe(data => {
+    this.http.get('/book').subscribe(data => {
       console.log(data);
       this.books = data;
     });
@@ -26,10 +26,10 @@ export class DestinationListComponent implements OnInit {
 
   logout() {
     localStorage.removeItem('jwtToken');
-    this.router.navigate(['dests']);
+    this.router.navigate(['dests1']);
   }
   deleteBook(id) {
-    this.http.delete('/dest/' +id)
+    this.http.delete('/book/' +id)
       .subscribe(res => {
         this.router.navigate(['delete']);
         }, (err) => {
