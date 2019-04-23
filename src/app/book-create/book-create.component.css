@@ -33,7 +33,7 @@ color: #fff !important;
   box-sizing: border-box;
 }
 
-.full-event {
+.full-destination {
 
   background-image: url("/assets/images/webform_wallpaper.png");
   background-size: cover;
@@ -71,7 +71,7 @@ section {
 
 /********** Heading ***********/
 
-h2.event-h2 {
+h2.destination-h2 {
   font-weight: bold;
   font-size: 2em;
   word-spacing: 2%;          /* expressed in %age of body font size: target/context = 3em/1.5em = 2% */
@@ -164,7 +164,7 @@ textarea {
       margin: 0 auto;
   }
 
-  h2.event-h2 {
+  h2.destination-h2 {
   font-weight: 300;
   font-size: 2em;
   word-spacing: 2%;             /* expressed in %age of body font size: target/context = 3em/1.5em = 2% */

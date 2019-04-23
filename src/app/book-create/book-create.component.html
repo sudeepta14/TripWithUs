@@ -1,178 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> <!--including Google fonts Lato for our website-->
-
-  <!-- Bootstrap Files for Header section alone -->
-
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
-  </head>
-  <body>
-    <div class="full-event">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> <!--including Google fonts Lato for our website-->
 
-      <!-- Navigation Bar HTML Code -->
-    <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand"><img src="/assets/images/sheero.png" alt="sheero_logo" class="sheero"></a>
-        <span class="navbar-text mx-auto">TripWithUs!</span>
+    <!-- Bootstrap Files for Header section alone -->
 
-        <button class="navbar-toggler ml-auto navbar-light bg-light" data-toggle="collapse" data-target="#collapse_target">
-
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapse_target">
-        <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-                <a class="nav-link" routerLink="">Home</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" routerLink="aboutus">About Us</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" routerLink="signup">Sign Up</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" routerLink="login">Login</a>
-            </li>
-
-        </ul>
-        </div>
-    </nav>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
-<!-- HTML Code for adding new Destinations -->
-    <section class="add-dest">
-                <div class="add-form-container">
-                <div class="row">
-                    <h2 class="dest-h2" style="color:#555454;">Add Destination</h2>
-                </div>
+    </head>
+    <body>
+      <div class="full-destination">
+      <nav class="navbar navbar-expand-md">
+          <a class="navbar-brand"><img src="/assets/images/sheero.png" alt="sheero_logo" class="sheero"></a>
+          <span class="navbar-text mx-auto">TripWithUs!</span>
 
-s
-                    <form (ngSubmit)="saveBook()" #bookForm="ngForm" class="add-form">
-                        <!---- Destination City row ----------->
+          <button class="navbar-toggler ml-auto navbar-light bg-light" data-toggle="collapse" data-target="#collapse_target">
 
-                        <div class="form-group">
-                                <label for="name">Destination City</label>
+              <span class="navbar-toggler-icon"></span>
+
+          </button>
+
+          <div class="collapse navbar-collapse" id="collapse_target">
+          <ul class="navbar-nav ml-auto">
+
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="">Home</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="aboutus">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="signup">Sign Up</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="login">Login</a>
+              </li>
+
+          </ul>
+          </div>
+      </nav>
 
 
-                                <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.isbn" name="isbn" placeholder="Please enter city name" required>
-                          </div>
 
-                        <!------- Destination City--------->
-
-                        <div class="form-group">
-                        <label for="name">Destination Activity</label>
-
-                        <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.title" name="title" placeholder="Please enter Destination Activity " required>
-
-                       </div>
-
-                        <!------- Destination Budget --------->
-
-                        <div class="form-group">
-                        <label for="name">Destination Budget</label>
+      <section class="add-destinations">
+                  <div class="add-form-container">
+                  <div class="row">
+                      <h2 class="destination-h2" style="color:#555454;">Add Destination</h2>
+                  </div>
 
 
-                      <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.author" name="author" placeholder="Please enter budget type" required>
-                    </div>
+                      <form (ngSubmit)="saveBook()" #bookForm="ngForm" class="add-form">
+                          <!---- Destination city row ----------->
 
-                        <!------- Destination Image --------->
+                          <div class="form-group">
+                                  <label for="name">Destination City</label>
+
+
+                                  <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.isbn" name="isbn" placeholder="enter city" required>
+                            </div>
+
+                          <!------- Destination Activity row --------->
+
+                          <div class="form-group">
+                          <label for="name">Destination Activity</label>
+
+                          <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.title" name="title" placeholder="enter what you want to do, e.g. Hiking etc." required>
+
+                         </div>
+
+                          <!------- Destination Budget row --------->
+
+                          <div class="form-group">
+                          <label for="name">Destination Budget</label>
+
+
+                        <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.author" name="author" placeholder="enter dollar amount e.g. $500" required>
+                      </div>
+
+                          <!------- Destination Image --------->
 
                         <div class="form-group">
                           <label for="name">Destination Image</label>
 
 
-                        <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.publisher" name="publisher" placeholder="Please enter image" required>
+                          <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.publisher" name="publisher" placeholder="copy image address of city and paste here" required>
+                        </div>
+
+                          <!----------- Save button row ------------->
+
+                            <div class="form-group">
+                              <button type="submit" style="width:100%;padding:2% 0;font-size: 1em;margin-top:2%;" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
+                            </div>
+
+                      </form>
+
+
                       </div>
 
 
+          <!----------------------------------  Mobile Form ------------------------------------------- -->
+              <div class="add-form-container-mobile">
+                  <div class="row">
+                      <h2 class="destination-h2" style="color:#fff;">Add Destinations</h2>
+                  </div>
+                  <!------- Customer name row --------->
+                  <div class="row">
 
-                        <!----------- Save button row ------------->
+                          <form (ngSubmit)="saveBook()" #bookForm="ngForm" class="add-form-mobile">
 
-                          <div class="form-group">
-                            <button type="submit" style="width:100%;padding:2% 0;font-size: 1em;margin-top:2%;" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
-                          </div>
-
-                    </form>
-
-
-                    </div>
-
-
-        <!----------------------------------  Mobile Form ------------------------------------------- -->
-            <div class="add-form-container-mobile">
-                <div class="row">
-                    <h2 class="dest-h2" style="color:#fff;">Add Destination</h2>
-                </div>
-                <!------- Customer name row --------->
-                <div class="row">
-
-                        <form (ngSubmit)="saveBook()" #bookForm="ngForm" class="add-form-mobile">
+                                  <!---- Destination city row ----------->
 
 
-                          <!---- Destination City ----------->
-
-                        <div class="form-group">
-                          <label for="name">Destination City</label>
+                                  <label for="name">Destination City</label>
 
 
-                          <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.city" name="city" placeholder="Please enter city name" required>
-                    </div>
-<!------- Destination Title --------->
+                                  <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.isbn" name="isbn" placeholder="enter city" required>
 
-<div class="form-group">
+  <!------- Destination Activity row --------->
+
+
   <label for="name">Destination Activity</label>
 
-  <input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.activity" name="activity" placeholder="Please enter type of activity - Dance, Music" required>
+  <input type="text" style="font-size:1em;" [(ngModel)]="book.title" class="form-control" name="title" placeholder="enter what you want to do, e.g. Hiking etc." required>
 
- </div>
 
-<!------- Destination Budget --------->
+  <!------- Destination Budget row --------->
 
-<div class="form-group">
+
   <label for="name">Destination Budget</label>
 
 
-<input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.budget" name="budget" placeholder="Please enter your budget" required>
-</div>
+  <input type="text" style="font-size:1em;" [(ngModel)]="book.author" class="form-control" name="author" placeholder="enter dollar amount e.g. $500" required>
 
-<!------- Destination Image--------->
 
-<div class="form-group">
+  <!------- Destination Image --------->
+
+
   <label for="name">Destination Image</label>
 
 
-<input type="text" style="font-size:1em;" class="form-control" [(ngModel)]="book.image" name="image" placeholder="Please enter image " required>
-</div>
-             <!------- Event Date row --------->
+  <input type="text" style="font-size:1em;" [(ngModel)]="book.publisher" class="form-control" name="publisher" placeholder="copy image address of city and paste here" required>
+
+
+                          <!----------- Save button row ------------->
 
 
 
-                        <!----------- Save button row ------------->
 
-                        <div class="form-group">
-                          <button type="submit" style="width:100%;padding:3% 0;font-size: 1em;margin-top:2%;" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
-                        </div>
-                    </form>
+                          <div class="form-group">
+                            <button type="submit" style="width:100%;padding:3% 0;font-size: 1em;margin-top:2%;" class="btn btn-success" [disabled]="!bookForm.form.valid">Save</button>
+                          </div>
+                      </form>
 
-                </div>
-                    </div>
+                  </div>
+                      </div>
 
-            </section>
-            </div>
-      <!------------------------------------------------------------------------------------------------------------------------->
-      <!--Bootstrap4 JS files -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+              </section>
+              </div>
+        <!------------------------------------------------------------------------------------------------------------------------->
+        <!--Bootstrap4 JS files -->
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  </body>
-</html>
+    </body>
+  </html>
