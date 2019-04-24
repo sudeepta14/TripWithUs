@@ -57,9 +57,9 @@
       <div class="col-md-4 col-sm-6 col-12 d-flex align-items-stretch mb-5" style="color: #555;" *ngFor="let book of books">
           <div class="card-body">
           <img bind-src="book.image" style="width:300px; height:200px" alt="image of added destination" class="img-fluid"/>
-          <h3 class="card-title mt-2">{{ event.name }}</h3>
-          <h5 class="card-subtitle mt-2">Budget: {{ event.budget }}</h5>
-          <h5 class="card-subtitle mt-2">Activity: {{ event.activity }}</h5>
+          <h3 class="card-title mt-2">{{ book.name }}</h3>
+          <h5 class="card-subtitle mt-2">Budget: {{ book.budget }}</h5>
+          <h5 class="card-subtitle mt-2">Activity: {{ book.activity }}</h5>
           </div>
           <br>
       </div>
